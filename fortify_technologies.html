@@ -1,0 +1,208 @@
+<!--
+Fortify-technologies.com — Static consulting website (GitHub Pages)
+This single-file example contains a minimal corporate static website (index.html)
+and step-by-step deployment + DNS instructions below.
+
+INSTRUCTIONS:
+1. Replace placeholders: YOUR_GITHUB_USERNAME and YOUR_EMAIL where shown.
+2. Create a GitHub repo named: YOUR_GITHUB_USERNAME.github.io
+3. Upload index.html (and optionally assets folder) into repo root OR use Git to push.
+4. Configure GitHub Pages and set custom domain to fortify-technologies.com
+5. Update DNS with records shown below.
+
+Note: This file is intentionally self-contained for quick testing. For production
+split CSS/JS into separate files and replace images.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fortify Technologies — Consulting</title>
+  <meta name="description" content="Fortify Technologies — Data, AI & Analytics consulting">
+  <style>
+    /* Minimal corporate styling */
+    :root{--accent:#0b5fff;--dark:#0b2545;--muted:#6b7280}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111}
+    header{background:linear-gradient(90deg,#f8fafc 0%, #ffffff 100%); border-bottom:1px solid #eef2f7}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700;color:var(--dark);letter-spacing:0.4px}
+    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:flex;gap:2rem;align-items:center;padding:56px 0}
+    .hero-left{flex:1}
+    h1{font-size:36px;margin:0 0 12px 0;color:var(--dark)}
+    p.lead{color:var(--muted);margin:0 0 20px 0;line-height:1.6}
+    .cta{display:inline-block;padding:12px 18px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:28px}
+    .card{background:#fff;border:1px solid #edf2f7;border-radius:10px;padding:18px}
+    .card h3{margin:0 0 8px 0}
+    footer{padding:36px 0;color:var(--muted);border-top:1px solid #eef2f7}
+    .flex{display:flex;gap:18px;align-items:center}
+    .case-list{margin-top:18px}
+    .case{padding:12px 0;border-bottom:1px dashed #eef2f7}
+    @media (max-width:800px){h1{font-size:28px}.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">Fortify<span style="color:var(--accent)">.</span>Technologies</div>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#cases">Case Studies</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Data & AI consulting that converts strategy into measurable impact</h1>
+        <p class="lead">We help enterprises build scalable analytics platforms, deploy ML models to production, and turn data into strategic value — across supply chain, marketing, and finance.</p>
+        <a class="cta" href="#contact">Schedule a consultation</a>
+        <div class="services" id="services">
+          <div class="card">
+            <h3>Analytics Strategy</h3>
+            <p>Roadmaps, capability building, and KPI-driven measurement frameworks.</p>
+          </div>
+          <div class="card">
+            <h3>Machine Learning</h3>
+            <p>End-to-end ML: data pipelines, model training, evaluation and deployment.</p>
+          </div>
+          <div class="card">
+            <h3>Product & Engineering</h3>
+            <p>Cloud-native data platforms and automation to scale analytics.</p>
+          </div>
+        </div>
+      </div>
+      <div style="flex:0 0 360px;">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='360' height='240'><rect width='100%' height='100%' fill='%230b2545'/><text x='50%' y='50%' font-size='18' fill='%23ffffff' text-anchor='middle' dominant-baseline='middle'>Fortify Technologies</text></svg>" alt="Fortify" style="width:100%;border-radius:10px;box-shadow:0 8px 30px rgba(11,37,69,0.08)">
+      </div>
+    </section>
+
+    <section id="industries">
+      <h2>Industries we serve</h2>
+      <div class="flex" style="margin-top:12px">
+        <div style="flex:1">
+          <p><strong>Retail & E‑commerce</strong><br>Personalization, assortment optimization, demand forecasting.</p>
+        </div>
+        <div style="flex:1">
+          <p><strong>Financial Services</strong><br>Fraud detection, customer analytics, risk modelling.</p>
+        </div>
+        <div style="flex:1">
+          <p><strong>Manufacturing & Supply Chain</strong><br>Inventory optimisation and predictive maintenance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="case-list">
+      <h2>Selected case studies</h2>
+      <div class="case">
+        <strong>Demand forecasting for a top retailer</strong>
+        <p class="lead" style="margin:6px 0">Reduced stockouts by 23% while lowering holding costs.</p>
+      </div>
+      <div class="case">
+        <strong>Personalization engine for a marketplace</strong>
+        <p class="lead" style="margin:6px 0">Lifted conversion by 17% through recommendation models.</p>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <h2>About Fortify Technologies</h2>
+      <p class="lead">We are a team of data scientists, engineers, and strategists who partner with medium and large enterprises to unlock measurable value from data.</p>
+    </section>
+
+    <section id="contact" style="margin-top:28px;padding-bottom:40px">
+      <h2>Contact</h2>
+      <p>To schedule a consultation, email us at <a href="mailto:contact@fortify-technologies.com">contact@fortify-technologies.com</a> or use the details below.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:700px">
+        <div class="card">
+          <h3>Head Office</h3>
+          <p>Gurugram, India</p>
+        </div>
+        <div class="card">
+          <h3>Representative</h3>
+          <p><strong>Email:</strong> <a href="mailto:contact@fortify-technologies.com">contact@fortify-technologies.com</a><br><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>© <span id="year"></span> Fortify Technologies</div>
+        <div style="color:var(--muted)">Built with GitHub Pages • Hosted free</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small script for year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+<!--
+DEPLOYMENT & DNS CHECKLIST (copy these into your notes)
+
+A. GitHub steps (quick):
+1. Create GitHub account if you don't have one: https://github.com
+2. Create a new public repository named: YOUR_GITHUB_USERNAME.github.io
+   (replace YOUR_GITHUB_USERNAME with your actual username)
+3. In the repo, click Add file -> Upload files. Upload this index.html file.
+4. Commit to main branch.
+5. Repo -> Settings -> Pages -> "Source: Branch: main / folder: / (root)" -> Save
+6. In Pages settings, under Custom domain, enter: fortify-technologies.com
+7. GitHub will indicate required DNS entries and attempt to provision HTTPS (may take time).
+
+B. DNS records at your domain provider (example: Namecheap / GoDaddy / BigRock):
+1. Create four A records for the root (host '@'):
+   - 185.199.108.153
+   - 185.199.109.153
+   - 185.199.110.153
+   - 185.199.111.153
+2. Create a CNAME record for 'www' pointing to YOUR_GITHUB_USERNAME.github.io
+3. (Optional) Add TXT record if GitHub asks for verification. The exact value will be provided in GitHub settings.
+4. Save. Wait for DNS propagation (usually 10–60 minutes, up to 24 hrs).
+
+C. After DNS is live:
+1. Visit https://fortify-technologies.com and https://www.fortify-technologies.com
+2. In GitHub Pages settings, enable HTTPS (if not auto-enabled). Let certificate issue.
+3. If pages show "site not found" or 404, wait — DNS and GitHub deploy may be in progress.
+
+D. Quick Git (optional, if you prefer CLI):
+1. On your computer install git.
+2. Run:
+   git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME.github.io.git
+   cd YOUR_GITHUB_USERNAME.github.io
+   # copy index.html into this folder
+   git add index.html
+   git commit -m "Initial site"
+   git push origin main
+
+E. Customize content:
+- Replace placeholder texts, phone numbers, and email.
+- Replace the inline SVG image with a real logo (store in /assets and update <img src> path).
+- Add pages: about.html, services.html, cases.html and link them from nav.
+
+F. Contact form option (free):
+- GitHub Pages cannot run server-side code. For a simple contact form, either:
+  1) Use a mailto: link (already included), OR
+  2) Use a form provider (e.g., Formspree, Getform, Netlify Forms). These typically have free tiers.
+
+G. Next improvements:
+- Separate CSS into styles.css, add Google Fonts, add favicon, add analytics (Google Analytics / Plausible), add robots.txt and sitemap.
+
+-->
