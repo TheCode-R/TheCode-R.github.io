@@ -1,0 +1,8 @@
+```txt
+SEO quick checklist
+1. Submit sitemap in Google Search Console (verify with DNS/HTML file)
+2. Add meta description on each page
+3. Add structured data (Organization, Contact) later
+4. Add social preview image (og:image) — place /assets/preview.png and set meta tags
+5. Add Google Analytics / Plausible — paste GA4 measurement ID or Plausible script into index.html
+```
