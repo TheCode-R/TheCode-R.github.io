@@ -1,0 +1,6 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0b2545" />
+  <text x="50%" y="52%" font-size="28" text-anchor="middle" fill="#fff" font-family="Inter, Arial" font-weight="700">F</text>
+</svg>
+```
