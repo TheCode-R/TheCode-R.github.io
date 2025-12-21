@@ -1,257 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fortify Technologies — Data, BI & Gen AI Consulting</title>
-  <meta name="description" content="Fortify Technologies — Power BI, Tableau, Data Analytics, Marketing Analytics, Python, Gen AI consulting." />
-  <meta name="author" content="Fortify Technologies" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Fortify Technologies — Data, BI & Gen AI Consulting" />
-  <meta property="og:description" content="Power BI, Tableau, Data Analysis, Marketing Analytics, Python, Gen AI consulting by Fortify Technologies." />
-  <meta property="og:url" content="https://fortify-technologies.com" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <style>
-    /* Mobile-first modern falling-water blue theme */
-    :root{
-      --accent-1: #1e88e5;
-      --accent-2: #0b72d1;
-      --dark: #042033;
-      --muted: #6b7b8a;
-      --bg: #f4f8fb;
-      --card: #ffffff;
-      --glass: rgba(255,255,255,0.65);
-      --radius: 12px;
-      --maxw: 1100px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--dark);background:linear-gradient(180deg,var(--bg),#ffffff);-webkit-font-smoothing:antialiased}
-    a{color:var(--accent-1);text-decoration:none}
-    .container{max-width:var(--maxw);margin:0 auto;padding:18px}
-
-    /* Header */
-    header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));backdrop-filter: blur(6px);border-bottom:1px solid rgba(11,37,69,0.04)}
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo-svg{height:40px;width:auto;display:block}
-    .brand-title{font-weight:800;color:var(--dark);line-height:1}
-    .brand-sub{font-size:12px;color:var(--muted)}
-
-    /* Navigation - horizontal row; wraps on small screens */
-    nav.primary{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-    nav.primary a{display:inline-block;padding:8px 10px;color:var(--dark);font-weight:700;border-radius:10px}
-    nav.primary a:hover{background:rgba(14,103,188,0.06)}
-
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1fr;gap:18px;padding:28px 0;align-items:start}
-    .hero-card{background: linear-gradient(180deg, rgba(30,136,229,0.06), rgba(11,114,209,0.02)); border-radius:var(--radius); padding:18px; border:1px solid rgba(11,37,69,0.04)}
-    h1{font-size:24px;margin:0;color:var(--dark);line-height:1.02}
-    .lead{color:var(--muted);margin:10px 0 16px;font-size:15px}
-    .cta-row{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:11px 16px;border-radius:10px;font-weight:800;text-decoration:none}
-    .btn-primary{background:linear-gradient(90deg,var(--accent-1),var(--accent-2));color:#fff;box-shadow:0 10px 24px rgba(14,103,188,0.12)}
-    .btn-outline{border:2px solid rgba(11,37,69,0.06);background:transparent;color:var(--dark)}
-
-    /* Services grid */
-    .services{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px}
-    .card{background:var(--card);border-radius:10px;padding:14px;border:1px solid rgba(11,37,69,0.04)}
-    .card h3{margin:0 0 8px 0}
-    .card p{margin:0;color:var(--muted);font-size:14px}
-
-    /* Aside contact */
-    aside{margin-top:12px}
-    .contact-card{background:var(--card);border-radius:10px;padding:14px;border:1px solid rgba(11,37,69,0.04);text-align:center}
-    .muted{color:var(--muted);font-size:13px}
-
-    /* Case list */
-    .case{background:var(--card);border-radius:10px;padding:12px;border:1px solid rgba(11,37,69,0.04);margin-bottom:10px}
-
-    /* Contact form area */
-    .contact-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
-    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(11,37,69,0.06);background:#fff;font-size:14px}
-    input:focus,textarea:focus{outline:none;box-shadow:0 6px 18px rgba(11,37,69,0.06)}
-
-    footer{padding:22px 0;color:var(--muted);font-size:13px}
-
-    /* Desktop layout */
-    @media(min-width:780px){
-      .hero{grid-template-columns:1fr 380px;gap:28px}
-      h1{font-size:34px}
-      .services{grid-template-columns:repeat(3,1fr)}
-      .contact-grid{grid-template-columns:1fr 1fr}
-    }
-    @media(min-width:1100px){.container{padding:28px}}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fortify Technologies | Analytics Dashboards for D2C Brands</title>
+  <meta name="description" content="We build decision-ready analytics dashboards for D2C and consumer brands using Power BI, Tableau, Looker Studio, Metabase and Excel." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header>
-    <div class="container topbar">
-      <div class="brand">
-        <!-- Inline SVG logo so site has no dependency on separate file -->
-        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" role="img" aria-label="Fortify Technologies logo">
-          <rect width="240" height="60" rx="8" fill="#05213a"></rect>
-          <text x="20" y="36" font-family="Inter, Arial" font-size="20" fill="#ffffff" font-weight="700">Fortify</text>
-          <text x="110" y="36" font-family="Inter, Arial" font-size="20" fill="#1e88e5" font-weight="700">Technologies</text>
-        </svg>
-        <div>
-          <div class="brand-title">Fortify Technologies</div>
-          <div class="brand-sub">Data • BI • Gen AI</div>
-        </div>
-      </div>
 
-      <nav class="primary" aria-label="Primary navigation">
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/about.html">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Fortify</div>
+      <a href="#contact" class="btn btn-primary">Book Free Scoping Call</a>
     </div>
   </header>
 
-  <main class="container" id="top">
-    <section class="hero" id="home">
-      <div>
-        <div class="hero-card" role="region" aria-label="Main hero">
-          <h1>On-demand Data, BI & Gen AI consulting — driving measurable business outcomes</h1>
-          <p class="lead">We are <strong>Fortify Technologies</strong>. We partner with growth-stage and e-commerce businesses to build production-ready dashboards, deploy data science, and integrate Gen AI solutions that automate workflows and increase revenue.</p>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#contact">Book a consultation</a>
-            <a class="btn btn-outline" href="/services.html">View services</a>
-          </div>
-
-          <div style="margin-top:18px">
-            <h3 style="margin:8px 0">Core services</h3>
-            <div class="services" id="services">
-              <div class="card">
-                <h3>Power BI & Tableau — Dashboards</h3>
-                <p>Design and optimize interactive executive portals, DAX best practices, RLS and automated refresh pipelines.</p>
-              </div>
-              <div class="card">
-                <h3>Data Analysis</h3>
-                <p>SQL data pipelines, cohort analysis, A/B testing, segmentation, and actionable insights for growth.</p>
-              </div>
-              <div class="card">
-                <h3>Marketing Analytics</h3>
-                <p>Attribution analysis, MMM consultation, uplift measurement and campaign optimization for ROI improvement.</p>
-              </div>
-              <div class="card">
-                <h3>Python Data Science</h3>
-                <p>Forecasting, classification, recommendation systems and model deployment support with reproducible code.</p>
-              </div>
-              <div class="card">
-                <h3>Gen AI Consulting</h3>
-                <p>RAG assistants, chatbot development, prompt engineering, and Gen AI pipelines to automate support & docs.</p>
-              </div>
-              <div class="card">
-                <h3>End-to-end Projects</h3>
-                <p>From scoping and prototyping to deployment and monitoring — we deliver solutions that move KPIs.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Analytics Dashboards for High-Growth Consumer Brands</h1>
+      <p class="hero-sub">
+        We partner with D2C founders and leadership teams to turn scattered data
+        into clear, decision-ready analytics dashboards across marketing,
+        revenue, and operations.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Book a Free Analytics Scoping Call</a>
+        <a href="#solution" class="btn btn-secondary">View What We Build</a>
       </div>
+    </div>
+  </section>
 
-      <aside>
-        <div class="contact-card">
-          <div style="font-size:13px;color:var(--muted)">Consulting Firm</div>
-          <h2 style="margin:6px 0">Fortify Technologies</h2>
-          <div class="muted">Analytics & AI Consulting — 9+ years experience</div>
-          <div style="margin-top:12px">📞 <a href="tel:+919896407107">+91-98964-7107</a></div>
-          <div style="margin-top:8px">✉️ <a href="mailto:ankitsethi.radaur@gmail.com">ankitsethi.radaur@gmail.com</a></div>
-          <div style="margin-top:12px"><a class="btn btn-primary" href="#contact">Schedule a call</a></div>
-        </div>
+  <!-- WHO -->
+  <section class="section light">
+    <div class="container">
+      <h2>Who We Work With</h2>
+      <p>
+        We work with D2C and consumer brands that want clarity, not more reports.
+      </p>
+      <ul class="list">
+        <li>D2C founders scaling their business</li>
+        <li>Growth & performance marketing teams</li>
+        <li>Operations & supply chain teams</li>
+        <li>Leadership teams needing a single source of truth</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="card" style="margin-top:12px">
-          <h3>Quick wins we deliver</h3>
-          <ul style="margin:8px 0 0 18px;color:var(--muted)">
-            <li>90-day dashboard → decision pipeline</li>
-            <li>Incremental revenue via personalization</li>
-            <li>Reduced ad-spend wastage using better attribution</li>
-          </ul>
-        </div>
-      </aside>
-    </section>
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="container">
+      <h2>The Problem</h2>
+      <ul class="list">
+        <li>Data scattered across ads, Shopify, logistics, CRM and finance tools</li>
+        <li>Different teams trusting different numbers</li>
+        <li>Manual Excel reporting every week</li>
+        <li>Dashboards built, but never actually used</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="cases" style="margin-top:22px">
-      <h2>Selected case studies</h2>
-      <div class="case">
-        <strong>Demand forecasting & replenishment</strong>
-        <p class="muted">Reduced stockouts by 23% and lowered holding costs via improved forecasting and inventory rules.</p>
+  <!-- SOLUTION -->
+  <section id="solution" class="section light">
+    <div class="container">
+      <h2>Our Solution</h2>
+      <ul class="list">
+        <li>Single source of truth across marketing, revenue and operations</li>
+        <li>Founder-friendly dashboards focused on decisions</li>
+        <li>Automated refresh — no manual work</li>
+        <li>Metrics that directly impact growth and profitability</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="section">
+    <div class="container">
+      <h2>Tools We Work With</h2>
+      <p>
+        We recommend tools based on usability, scalability and cost — not bias.
+      </p>
+      <div class="tools">
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>Looker Studio</span>
+        <span>Metabase</span>
+        <span>Excel Dashboards</span>
       </div>
-      <div class="case">
-        <strong>Power BI migration & dashboard consolidation</strong>
-        <p class="muted">Consolidated 12 dashboards into 1 portal — adoption increased 3x.</p>
-      </div>
-      <div class="case">
-        <strong>Gen AI assistant for customer support</strong>
-        <p class="muted">Built a RAG-based assistant to automate routine queries, reducing first-response time by 60%.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about" style="margin-top:22px">
-      <h2>About — Why work with Fortify Technologies</h2>
-      <div style="display:grid;gap:16px;margin-top:12px">
-        <div class="card">
-          <p><strong>Fortify Technologies</strong> brings 9+ years of analytics experience across e-commerce, marketing analytics and data engineering. We focus on pragmatic, measurable outcomes: dashboards that get used, models that improve KPIs, and AI that automates work.</p>
-          <p class="muted">We have hands-on experience in Power BI, Tableau, SQL, Python and Gen AI projects including RAG-based assistants and production ML pipelines.</p>
-        </div>
-        <div class="card">
-          <h3>Clients & Tools</h3>
-          <p class="muted">Power BI • Tableau • Python • SQL • AWS • Docker • Git • LangChain • Vector DBs</p>
-        </div>
-      </div>
-    </section>
+  <!-- WHY -->
+  <section class="section light">
+    <div class="container">
+      <h2>Why Fortify</h2>
+      <ul class="list">
+        <li>Led by a senior analytics professional with 9+ years of experience</li>
+        <li>Deep exposure to D2C, growth and performance analytics</li>
+        <li>Outcome-driven approach — not tool-driven</li>
+        <li>Flexible engagement: setup + ongoing analytics partnership</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact" style="margin-top:22px">
-      <h2>Contact — Let's discuss your project</h2>
-      <p class="muted">We typically reply within 24 hours. Free 15-minute scoping call for qualified projects.</p>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Ready to Bring Clarity to Your Data?</h2>
+      <p>
+        Book a free scoping call to discuss your data, dashboards and decisions.
+      </p>
+      <a href="mailto:contact@fortify-technologies.com" class="btn btn-primary">
+        Book a Free Analytics Scoping Call
+      </a>
+    </div>
+  </section>
 
-      <div class="contact-grid">
-        <div class="card">
-          <h3>Reach us</h3>
-          <p style="margin:6px 0">📞 <a href="tel:+919896407107">+91-98964-7107</a></p>
-          <p style="margin:6px 0">✉️ <a href="mailto:ankitsethi.radaur@gmail.com">ankitsethi.radaur@gmail.com</a></p>
-          <p style="margin:6px 0">Or use the form to share project details — we'll reply within 24 hours.</p>
-        </div>
-
-        <!-- Contact form: replace FORMSPREE_ENDPOINT with your endpoint or use mailto fallback -->
-        <form class="card" method="POST" action="https://formspree.io/f/FORMSPREE_ENDPOINT" id="contactForm" aria-label="Contact form">
-          <label class="muted">Your name</label>
-          <input type="text" name="name" required placeholder="Full name" />
-          <label class="muted">Email</label>
-          <input type="email" name="email" required placeholder="you@company.com" />
-          <label class="muted">Phone</label>
-          <input type="tel" name="phone" placeholder="Optional" />
-          <label class="muted">Project brief</label>
-          <textarea name="message" rows="5" required placeholder="Describe your project, timeline and budget"></textarea>
-
-          <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
-            <button class="btn btn-primary" type="submit">Send message</button>
-            <a class="btn btn-outline" href="mailto:ankitsethi.radaur@gmail.com">Or email directly</a>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-      <div>© <span id="year"></span> Fortify Technologies</div>
-      <div class="muted">Consulting • Power BI • Data Science • Gen AI</div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Fortify Technologies. All rights reserved.</p>
     </div>
   </footer>
 
-  <script>
-    // small script for year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // No debug text, no stray HTML. Navigation is horizontal and wraps on small screens.
-    // Form submission: Formspree endpoint must be updated with your ID. If you prefer mailto, set action="mailto:ankitsethi.radaur@gmail.com".
-  </script>
 </body>
 </html>
