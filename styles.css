@@ -3,8 +3,7 @@
   --accent: #2563eb;
   --text: #0f172a;
   --muted: #475569;
-  --border: #e5e7eb;
-  --light: #f8fafc;
+  --border: #1e293b;
 }
 
 * { box-sizing: border-box; }
@@ -12,28 +11,47 @@
 body {
   margin: 0;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: var(--text);
   line-height: 1.7;
+  color: var(--text);
   overflow-x: hidden;
 }
 
 /* NAV */
 .nav {
   background: white;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  border-bottom: 1px solid #e5e7eb;
 }
 .nav-inner {
+  height: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72px;
 }
 .logo {
   font-weight: 700;
   font-size: 1.3rem;
+}
+
+/* TICKER */
+.ticker {
+  background: var(--dark);
+  overflow: hidden;
+}
+.ticker-track {
+  display: inline-flex;
+  gap: 60px;
+  padding: 14px 0;
+  animation: scroll 26s linear infinite;
+}
+.ticker span {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 /* HERO */
@@ -41,124 +59,75 @@ body {
   position: relative;
   background: var(--dark);
   color: white;
-  padding: 130px 0;
+  padding: 120px 0;
 }
 .hero-bg {
   position: absolute;
   inset: 0;
-  z-index: 0;
 }
 .hero-grid {
   position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  gap: 70px;
+  gap: 60px;
   align-items: center;
 }
 .eyebrow {
   color: #60a5fa;
-  font-weight: 600;
   font-size: 0.85rem;
+  font-weight: 600;
 }
 .hero h1 {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   margin: 14px 0;
 }
 .hero p {
   color: #cbd5e1;
-  max-width: 520px;
 }
 .hero-btn {
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
-/* Dashboard image */
-.dashboard-img {
+/* Dashboard SVG */
+.dashboard-svg {
   width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45);
 }
 
-/* Sections */
-.section {
-  padding: 120px 0;
-}
-.section.light {
-  background: var(--light);
-}
-h2 {
-  font-size: 2.1rem;
-}
-.lead {
-  color: var(--muted);
-  margin-top: 12px;
-}
-
-/* Layout helpers */
+/* Layout */
 .container {
   max-width: 1150px;
   margin: auto;
   padding: 0 24px;
 }
+.section {
+  padding: 100px 0;
+}
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
 }
-.split {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 70px;
-}
-
-/* Cards & steps */
-.value-item,
-.step {
-  background: white;
-  padding: 28px;
+.value-item {
+  padding: 24px;
+  border: 1px solid #e5e7eb;
   border-radius: 14px;
-  border: 1px solid var(--border);
-}
-.step span {
-  font-weight: 700;
-  color: var(--accent);
-}
-
-/* Checklist */
-.checklist {
-  padding-left: 18px;
-}
-.checklist li {
-  margin-bottom: 14px;
-}
-
-/* Tools */
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 20px;
-}
-.tools span {
-  padding: 10px 18px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
 }
 
 /* CTA */
 .cta {
-  text-align: center;
   background: var(--dark);
   color: white;
+  text-align: center;
 }
-.cta .lead {
+.lead {
   color: #cbd5e1;
 }
 
 /* Buttons */
 .btn {
-  display: inline-block;
   padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
@@ -180,48 +149,12 @@ h2 {
   padding: 28px;
 }
 
-/* Subtle motion */
-.fade-in {
-  animation: fadeIn 0.9s ease both;
-}
-.slide-up {
-  animation: slideUp 1s ease both;
-}
-.hover-rise {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hover-rise:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: none; }
-}
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: none; }
-}
-
-/* MOBILE & iOS FIXES */
+/* MOBILE / iOS */
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
   .hero h1 {
     font-size: 2.3rem;
-    line-height: 1.25;
-  }
-}
-
-@media (max-width: 600px) {
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-  .section {
-    padding: 80px 0;
   }
 }
