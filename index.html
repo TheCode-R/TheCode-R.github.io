@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Fortify | Analytics Dashboards for D2C Brands</title>
-
   <meta name="description"
-        content="Founder-focused analytics dashboards for D2C and consumer brands across marketing, revenue and operations." />
+        content="Founder-focused analytics dashboards for D2C brands across marketing, revenue and operations." />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -24,69 +23,94 @@
 
 <!-- HERO -->
 <section class="hero">
-  <!-- Abstract analytics background -->
+
+  <!-- Animated SVG background -->
   <svg class="hero-bg" viewBox="0 0 1200 600" preserveAspectRatio="none">
     <defs>
-      <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#2563eb" stop-opacity="0.15"/>
-        <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.05"/>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2563eb" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.06"/>
       </linearGradient>
     </defs>
-    <circle cx="200" cy="100" r="180" fill="url(#g1)" />
-    <circle cx="900" cy="400" r="260" fill="url(#g1)" />
+
+    <circle cx="200" cy="120" r="180" fill="url(#grad)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0 0"
+        to="20 -10"
+        dur="12s"
+        repeatCount="indefinite" />
+    </circle>
+
+    <circle cx="950" cy="420" r="260" fill="url(#grad)">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0 0"
+        to="-25 15"
+        dur="14s"
+        repeatCount="indefinite" />
+    </circle>
   </svg>
 
-  <div class="container hero-grid">
+  <div class="container hero-grid fade-in">
     <div class="hero-text">
       <span class="eyebrow">Founder’s Analytics Partner for D2C Brands</span>
+
       <h1>
         Turn Data<br>
         Into Decisions<br>
         Founders Trust
       </h1>
+
       <p>
-        We help D2C and consumer brands replace scattered reports with
+        We help D2C and consumer brands replace fragmented reports with
         unified, decision-ready analytics dashboards across marketing,
         revenue and operations.
       </p>
+
       <a href="#contact" class="btn btn-primary hero-btn">
         Book a Free Analytics Scoping Call
       </a>
     </div>
 
-    <div class="hero-visual">
-      <div class="dashboard-mock">
-        <h4>Founder View</h4>
-        <div class="metric"><span>Revenue</span><strong>↑ 18%</strong></div>
-        <div class="metric"><span>Marketing ROI</span><strong>3.4x</strong></div>
-        <div class="metric"><span>Orders Fulfilled</span><strong>96%</strong></div>
-        <div class="metric"><span>Contribution Margin</span><strong>+4.2%</strong></div>
-      </div>
+    <!-- Dashboard Image Support -->
+    <div class="hero-visual slide-up">
+      <picture>
+        <!-- Optional retina image -->
+        <!-- <source srcset="assets/dashboard@2x.png 2x" /> -->
+        <img
+          src="assets/dashboard.png"
+          alt="Founder analytics dashboard"
+          class="dashboard-img"
+        />
+      </picture>
     </div>
   </div>
 </section>
 
 <!-- VALUE -->
-<section class="section value">
+<section class="section value fade-in">
   <div class="container grid-3">
-    <div class="value-item">
+    <div class="value-item hover-rise">
       <h3>Clarity Over Complexity</h3>
-      <p>Dashboards designed to answer questions — not add noise.</p>
+      <p>Dashboards designed to answer questions, not add noise.</p>
     </div>
-    <div class="value-item">
+    <div class="value-item hover-rise">
       <h3>Single Source of Truth</h3>
       <p>Marketing, revenue and ops aligned in one trusted view.</p>
     </div>
-    <div class="value-item">
+    <div class="value-item hover-rise">
       <h3>Built for Scale</h3>
-      <p>Analytics that evolve as your D2C brand grows.</p>
+      <p>Analytics that grow as your D2C brand grows.</p>
     </div>
   </div>
 </section>
 
 <!-- PROBLEM -->
 <section class="section">
-  <div class="container split">
+  <div class="container split fade-in">
     <div>
       <h2>The Problem We See Repeatedly</h2>
       <p class="lead">
@@ -95,7 +119,7 @@
     </div>
     <div>
       <ul class="checklist">
-        <li>Data spread across Shopify, ads, logistics and finance</li>
+        <li>Data scattered across Shopify, ads, logistics and finance</li>
         <li>Different teams trusting different numbers</li>
         <li>Manual Excel reporting every week</li>
         <li>Dashboards built but rarely used by founders</li>
@@ -105,22 +129,22 @@
 </section>
 
 <!-- APPROACH -->
-<section class="section light">
+<section class="section light fade-in">
   <div class="container">
     <h2>Our Approach</h2>
 
     <div class="steps">
-      <div class="step">
+      <div class="step hover-rise">
         <span>01</span>
         <h4>Define What Matters</h4>
         <p>Align on metrics founders should run the business on.</p>
       </div>
-      <div class="step">
+      <div class="step hover-rise">
         <span>02</span>
         <h4>Unify the Data</h4>
-        <p>Bring marketing, revenue and operations into one model.</p>
+        <p>Marketing, revenue and ops into one model.</p>
       </div>
-      <div class="step">
+      <div class="step hover-rise">
         <span>03</span>
         <h4>Design for Decisions</h4>
         <p>Dashboards built for weekly and daily reviews.</p>
@@ -130,11 +154,11 @@
 </section>
 
 <!-- TOOLS -->
-<section class="section">
+<section class="section fade-in">
   <div class="container">
     <h2>Tools We Work With</h2>
     <p class="lead">
-      Tool selection is driven by usability, cost and scale — not bias.
+      Tool selection is driven by usability, cost and scale.
     </p>
     <div class="tools">
       <span>Power BI</span>
@@ -146,28 +170,12 @@
   </div>
 </section>
 
-<!-- WHY -->
-<section class="section light">
-  <div class="container split">
-    <div>
-      <h2>Why Founders Choose Fortify</h2>
-    </div>
-    <div>
-      <ul class="checklist">
-        <li>Senior-led analytics engagement (9+ years experience)</li>
-        <li>Deep understanding of D2C growth metrics</li>
-        <li>Outcome-driven, not tool-driven delivery</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
-<section id="contact" class="section cta">
+<section id="contact" class="section cta fade-in">
   <div class="container">
     <h2>Bring Clarity to Your Data</h2>
     <p class="lead">
-      Start with a free scoping call. No sales pitch — just clarity.
+      Start with a free scoping call. No sales pitch. Just clarity.
     </p>
     <a href="mailto:contact@fortify-technologies.com"
        class="btn btn-primary large">
