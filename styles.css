@@ -1,158 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+:root {
+  --dark: #0f172a;
+  --accent-blue: #2563eb;
+  --accent-yellow: #eab308;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e5e7eb;
+  --light: #f8fafc;
+}
 
-  <title>Fortify | Experience Certainty in Analytics</title>
-  <meta name="description"
-        content="Enterprise-grade analytics dashboards for D2C brands, built on a decade of analytics expertise." />
+* { box-sizing: border-box; }
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+}
 
-<body>
+/* NAV */
+.nav {
+  background: var(--dark);
+}
+.nav.simple {
+  padding: 12px 0;
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-size: 1.6rem;   /* BIGGER */
+  font-weight: 700;
+  color: white;
+}
+.tagline {
+  font-size: 0.75rem; /* SMALLER */
+  color: #c7d2fe;
+  letter-spacing: 0.05em;
+}
 
-<!-- HEADER -->
-<header class="nav">
-  <div class="container nav-inner">
-    <div class="brand">
-      <span class="logo">Fortify</span>
-      <span class="tagline">Experience Certainty</span>
-    </div>
-    <a href="#contact" class="btn btn-primary">Free Scoping Call</a>
-  </div>
-</header>
+/* MENU */
+.menu a {
+  color: #cbd5e1;
+  margin-left: 20px;
+  text-decoration: none;
+}
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-text">
-      <h1>
-        Analytics Dashboards<br>
-        Built for Confident Decisions
-      </h1>
+/* HERO */
+.hero-wrap {
+  background: var(--dark);
+  color: white;
+}
+.hero-content {
+  padding: 70px 0 40px;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+.hero-sub {
+  max-width: 620px;
+  color: #cbd5e1;
+}
 
-      <p class="hero-sub">
-        Fortify helps D2C and consumer brands replace fragmented reporting
-        with unified, decision-ready analytics across marketing,
-        revenue, and operations.
-      </p>
+/* TICKER */
+.ticker {
+  background: #0b1220;
+  border-top: 1px solid #1f2937;
+  overflow: hidden;
+}
+.ticker-track {
+  display: inline-flex;
+  gap: 16px;
+  padding: 6px 0;
+  animation: scroll 45s linear infinite;
+}
+.ticker span {
+  font-size: 0.7rem;
+  color: var(--accent-yellow);
+  text-transform: uppercase;
+}
+.ticker .dot {
+  color: #93c5fd;
+}
+@keyframes scroll {
+  to { transform: translateX(-50%); }
+}
 
-      <a href="#contact" class="btn btn-primary hero-btn">
-        Book a Free Analytics Scoping Call
-      </a>
-    </div>
-  </div>
+/* LAYOUT */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 24px;
+}
+.container.narrow {
+  max-width: 780px;
+}
+.section {
+  padding: 90px 0;
+}
+.section.light {
+  background: var(--light);
+}
+.lead {
+  color: var(--muted);
+}
 
-  <!-- SUBTLE CONFIDENCE STRIP -->
-  <div class="ticker">
-    <div class="ticker-track">
-      <span>Decade of analytics expertise</span>
-      <span class="dot">•</span>
-      <span>Trusted by data-driven D2C teams</span>
-      <span class="dot">•</span>
-      <span>Enterprise-grade dashboards</span>
-      <span class="dot">•</span>
-      <span>Decisions you can rely on</span>
+/* CONTENT */
+.bullets {
+  padding-left: 18px;
+}
+.bullets li {
+  margin-bottom: 12px;
+}
 
-      <span>Decade of analytics expertise</span>
-      <span class="dot">•</span>
-      <span>Trusted by data-driven D2C teams</span>
-      <span class="dot">•</span>
-      <span>Enterprise-grade dashboards</span>
-      <span class="dot">•</span>
-      <span>Decisions you can rely on</span>
-    </div>
-  </div>
-</section>
+/* TOOLS */
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+.tools span {
+  border: 1px solid var(--border);
+  padding: 10px 18px;
+  border-radius: 999px;
+}
 
-<!-- WHAT WE DO -->
-<section class="section">
-  <div class="container narrow">
-    <h2>What We Do</h2>
-    <p class="lead">
-      We design and build analytics dashboards that founders and leadership teams
-      actually use to run the business.
-    </p>
+/* CTA */
+.cta {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+}
 
-    <ul class="bullets">
-      <li>Unified dashboards across marketing, revenue, and operations</li>
-      <li>Clear KPI definitions aligned with business goals</li>
-      <li>Automated reporting with a single source of truth</li>
-      <li>Dashboards designed for weekly and daily decision-making</li>
-    </ul>
-  </div>
-</section>
+/* CALENDLY */
+.calendly-wrapper {
+  margin-top: 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+}
+.contact-alt {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
 
-<!-- WHO -->
-<section class="section light">
-  <div class="container narrow">
-    <h2>Who We Work With</h2>
-    <p class="lead">
-      We partner with growing D2C organizations that need clarity as complexity increases.
-    </p>
+/* BUTTONS */
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn.small {
+  padding: 8px 16px;
+}
+.btn-primary {
+  background: var(--accent-blue);
+  color: white;
+}
 
-    <ul class="bullets">
-      <li>D2C founders and leadership teams</li>
-      <li>Growth and marketing teams</li>
-      <li>Operations and supply chain teams</li>
-    </ul>
-  </div>
-</section>
+/* FOOTER */
+.footer {
+  background: #020617;
+  color: #94a3b8;
+  text-align: center;
+  padding: 28px;
+}
 
-<!-- WHY -->
-<section class="section">
-  <div class="container narrow">
-    <h2>Why Fortify</h2>
-    <p class="lead">
-      Fortify is led by an analytics professional with a decade of hands-on experience
-      across data, growth, and decision science.
-    </p>
-
-    <ul class="bullets">
-      <li>10+ years of real-world analytics experience</li>
-      <li>Deep understanding of D2C performance metrics</li>
-      <li>Outcome-driven, senior-led engagements</li>
-    </ul>
-  </div>
-</section>
-
-<!-- TOOLS -->
-<section class="section light">
-  <div class="container narrow">
-    <h2>Tools & Platforms</h2>
-    <div class="tools">
-      <span>Power BI</span>
-      <span>Tableau</span>
-      <span>Looker Studio</span>
-      <span>Metabase</span>
-      <span>Excel Dashboards</span>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section id="contact" class="section cta">
-  <div class="container narrow">
-    <h2>Bring Certainty to Your Data</h2>
-    <p class="lead">
-      Start with a free analytics scoping call. No sales pitch — just clarity.
-    </p>
-
-    <a href="mailto:contact@fortify-technologies.com"
-       class="btn btn-primary large">
-      Book a Free Analytics Scoping Call
-    </a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <p>© 2025 Fortify Technologies</p>
-  </div>
-</footer>
-
-</body>
-</html>
+/* MOBILE */
+@media (max-width: 900px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
