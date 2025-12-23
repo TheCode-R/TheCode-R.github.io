@@ -21,9 +21,6 @@ body {
 .nav {
   background: var(--dark);
 }
-.nav.simple {
-  padding: 12px 0;
-}
 .nav-inner {
   display: flex;
   justify-content: space-between;
@@ -34,12 +31,12 @@ body {
   flex-direction: column;
 }
 .logo {
-  font-size: 1.6rem;   /* BIGGER */
+  font-size: 1.6rem; /* Bigger */
   font-weight: 700;
   color: white;
 }
 .tagline {
-  font-size: 0.75rem; /* SMALLER */
+  font-size: 0.75rem; /* Smaller */
   color: #c7d2fe;
   letter-spacing: 0.05em;
 }
@@ -72,17 +69,21 @@ body {
   background: #0b1220;
   border-top: 1px solid #1f2937;
   overflow: hidden;
+  white-space: nowrap;
 }
 .ticker-track {
   display: inline-flex;
-  gap: 16px;
-  padding: 6px 0;
-  animation: scroll 45s linear infinite;
+  align-items: center;
+  gap: 14px;
+  padding: 4px 0;
+  animation: scroll 50s linear infinite;
+  white-space: nowrap;
 }
 .ticker span {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   color: var(--accent-yellow);
   text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 .ticker .dot {
   color: #93c5fd;
@@ -116,19 +117,6 @@ body {
 }
 .bullets li {
   margin-bottom: 12px;
-}
-
-/* TOOLS */
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 24px;
-}
-.tools span {
-  border: 1px solid var(--border);
-  padding: 10px 18px;
-  border-radius: 999px;
 }
 
 /* CTA */
