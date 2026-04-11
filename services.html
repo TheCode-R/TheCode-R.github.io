@@ -1,40 +1,161 @@
-
-```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Services — Fortify Technologies</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta name="description" content="Services: Power BI, Tableau, Data Analysis, Marketing Analytics, Python Data Science, Gen AI consulting">
-  <style>body{font-family:Inter,system-ui,Arial;background:#f8fafc;color:#0f1724;margin:0}.container{max-width:1000px;margin:0 auto;padding:18px}.card{background:#fff;padding:14px;border-radius:10px;border:1px solid #eef4ff;margin-bottom:12px}h1{margin:0 0 12px 0}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions — Fortify Technologies</title>
+  <meta name="description" content="Six data intelligence solutions for SaaS and e-commerce growth teams: Customer Profiling, Churn Analysis, Business Dashboards, MTU Growth, Marketing Optimisation, Competitor Analysis." />
+  <link rel="canonical" href="https://fortify-technologies.com/services.html" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMobileNav()">Home</a>
+  <a href="services.html" onclick="closeMobileNav()">Solutions</a>
+  <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+  <a href="insights.html" onclick="closeMobileNav()">Insights</a>
+  <a href="about.html" onclick="closeMobileNav()">About</a>
+  <a href="index.html#contact" class="btn-outline" onclick="closeMobileNav()">Book a Call</a>
+</div>
+
+<nav class="nav scrolled" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="logo">Fortify</span>
+      <span class="tagline">Data Intelligence</span>
+    </a>
+    <div class="menu">
+      <a href="services.html" class="active">Solutions</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="insights.html">Insights</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact" class="btn-outline sm">Book a Call</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
   <div class="container">
-    <a href="/">← Home</a>
-    <h1>Services</h1>
-    <div class="card">
-      <h2>Power BI & Tableau — Dashboards</h2>
-      <p>Interactive executive portals, performance optimization, row-level security, DAX best practices & report automation.</p>
+    <div class="section-label">Our Solutions</div>
+    <h1>Six intelligence systems.<br>One growth outcome.</h1>
+    <p>Every solution is a proven framework — scoped, built, and embedded into how your team operates. Not a template. Not a tool licence.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="cards-grid">
+      <article class="card-item">
+        <div class="card-tag">Solution 01</div>
+        <h3>Customer Profiling</h3>
+        <p>Turn raw transaction and behavioural data into precise segments your growth team can act on. Know who your most valuable customers are, what drives their loyalty, and who you should be acquiring more of.</p>
+        <ul class="svc-outcomes">
+          <li>RFM segmentation with predictive lifetime value scoring</li>
+          <li>Behavioural clustering for untapped high-value segments</li>
+          <li>Unified 360° customer view across all touchpoints</li>
+        </ul>
+        <a href="index.html#contact" class="card-link">Discuss this solution</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Solution 02</div>
+        <h3>Churn Analysis</h3>
+        <p>Stop losing revenue to churn you didn't see coming. We build early-warning intelligence that flags at-risk customers before they cancel — giving your team time and context to intervene.</p>
+        <ul class="svc-outcomes">
+          <li>Predictive churn scoring on your live customer base</li>
+          <li>Root-cause analysis of why customers are leaving</li>
+          <li>Retention playbooks triggered by behavioural signals</li>
+        </ul>
+        <a href="index.html#contact" class="card-link">Discuss this solution</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Solution 03</div>
+        <h3>Business Dashboards</h3>
+        <p>Replace spreadsheets and fragmented BI tools with one authoritative view of the business. Built in Power BI, Tableau, Looker Studio, or Metabase — designed for daily use, not quarterly reviews.</p>
+        <ul class="svc-outcomes">
+          <li>Single source of truth across revenue, ops, and marketing</li>
+          <li>Real-time KPIs aligned to leadership decisions</li>
+          <li>Designed for adoption — teams actually use these daily</li>
+        </ul>
+        <a href="index.html#contact" class="card-link">Discuss this solution</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Solution 04</div>
+        <h3>MTU Growth</h3>
+        <p>Monthly Transacting Users is the one metric that tells you whether your business is truly growing. We build the full Acquisition → Retention → Reactivation framework in one cohesive system.</p>
+        <ul class="svc-outcomes">
+          <li>Cohort-level acquisition analysis by channel and campaign</li>
+          <li>Retention curves that expose the exact drop-off point</li>
+          <li>Win-back model for dormant high-value customers</li>
+        </ul>
+        <a href="index.html#contact" class="card-link">Discuss this solution</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Solution 05</div>
+        <h3>Marketing Campaign Optimisation</h3>
+        <p>Build a closed-loop attribution model that shows exactly which spend drives which outcome. Stop allocating budget based on last-click data and start making decisions on incrementality.</p>
+        <ul class="svc-outcomes">
+          <li>Multi-touch attribution across all channels</li>
+          <li>Incrementality testing to validate what is working</li>
+          <li>Spend reallocation model with ROI forecasting</li>
+        </ul>
+        <a href="index.html#contact" class="card-link">Discuss this solution</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Solution 06</div>
+        <h3>Competitor Analysis</h3>
+        <p>Understand where you stand in the market from structured intelligence. Map the competitive landscape — what rivals are doing, where they are winning, and where they are exposed.</p>
+        <ul class="svc-outcomes">
+          <li>Pricing, positioning, and product gap analysis</li>
+          <li>Digital share-of-voice and search intent mapping</li>
+          <li>Competitive whitespace and opportunity identification</li>
+        </ul>
+        <a href="index.html#contact" class="card-link">Discuss this solution</a>
+      </article>
     </div>
-    <div class="card">
-      <h2>Data Analysis</h2>
-      <p>SQL data pipelines, cohort analysis, A/B testing analysis, segmentation & dashboards for insights.</p>
-    </div>
-    <div class="card">
-      <h2>Marketing Analytics</h2>
-      <p>Attribution, campaign measurement, MMM consultation, uplift measurement & experiment design.</p>
-    </div>
-    <div class="card">
-      <h2>Python Data Science</h2>
-      <p>Forecasting, classification, recommendation systems, feature engineering, model evaluation and production support.</p>
-    </div>
-    <div class="card">
-      <h2>Gen AI Consulting</h2>
-      <p>RAG architecture, chatbot development, prompt engineering, and integrations with business workflows.</p>
+    <div class="mt-60" style="text-align:center;">
+      <a href="index.html#contact" class="btn-outline">Book a Discovery Call</a>
     </div>
   </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Fortify Technologies</div>
+        <div class="footer-copy">© 2025 Fortify Technologies. Data Intelligence for Growth Teams.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="services.html">Solutions</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mailto:contact@fortify-technologies.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+</script>
 </body>
 </html>
-```
