@@ -1,17 +1,15 @@
-```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://fortify-technologies.com/</loc>
-  </url>
-  <url>
-    <loc>https://fortify-technologies.com/services.html</loc>
-  </url>
-  <url>
-    <loc>https://fortify-technologies.com/case-studies.html</loc>
-  </url>
-  <url>
-    <loc>https://fortify-technologies.com/about.html</loc>
-  </url>
+  <url><loc>https://fortify-technologies.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/solutions/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/solutions/customer-profiling.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/solutions/churn-analysis.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/solutions/business-dashboards.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/solutions/mtu-growth.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/solutions/campaign-optimisation.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/solutions/competitor-analysis.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/about.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/contact.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/insights/</loc><priority>0.75</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://fortify-technologies.com/case-studies/</loc><priority>0.75</priority><changefreq>monthly</changefreq></url>
 </urlset>
-```
