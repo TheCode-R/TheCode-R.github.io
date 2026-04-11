@@ -3,58 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Fortify</title>
+  <title>About — Fortify Technologies</title>
+  <meta name="description" content="Fortify Technologies is a data intelligence firm built by senior practitioners with a decade of experience in SaaS and e-commerce analytics." />
+  <link rel="canonical" href="https://fortify-technologies.com/about.html" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-<header class="nav simple">
-  <div class="container nav-inner">
-    <div class="brand">
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMobileNav()">Home</a>
+  <a href="services.html" onclick="closeMobileNav()">Solutions</a>
+  <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+  <a href="insights.html" onclick="closeMobileNav()">Insights</a>
+  <a href="about.html" onclick="closeMobileNav()">About</a>
+  <a href="index.html#contact" class="btn-outline" onclick="closeMobileNav()">Book a Call</a>
+</div>
+
+<nav class="nav scrolled" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
       <span class="logo">Fortify</span>
-      <span class="tagline">Experience Certainty</span>
-    </div>
-    <nav class="menu">
-      <a href="index.html">Home</a>
+      <span class="tagline">Data Intelligence</span>
+    </a>
+    <div class="menu">
+      <a href="services.html">Solutions</a>
       <a href="case-studies.html">Case Studies</a>
       <a href="insights.html">Insights</a>
-    </nav>
+      <a href="about.html" class="active">About</a>
+      <a href="index.html#contact" class="btn-outline sm">Book a Call</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</header>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">About Us</div>
+    <h1>Built by practitioners.<br>Not theorists.</h1>
+    <p>A decade of solving real analytics problems inside growing businesses — before Fortify existed.</p>
+  </div>
+</div>
 
 <section class="section">
-  <div class="container narrow">
-    <h1>About Fortify</h1>
+  <div class="container">
+    <div class="prose">
+      <p>Fortify Technologies was created to solve a problem that most analytics agencies don't acknowledge: <strong>most data projects fail not because of bad technology, but because they start in the wrong place.</strong></p>
+      <p>We've spent a decade embedded inside SaaS companies and e-commerce brands — not as consultants visiting for a few weeks, but as the people responsible for the numbers. We've felt the pressure of a leadership team that doesn't trust the dashboard. We've lived through the quarterly planning cycle where no one can agree on a single metric. We've watched good companies make bad decisions because their data told them a half-truth.</p>
+      <p>Fortify is the firm we wished existed when we were on the inside.</p>
 
-    <p class="lead">
-      Fortify was created to bring certainty to business decisions.
-    </p>
+      <h3>What makes us different</h3>
+      <p>We are not a generalist analytics agency. We work exclusively with mid-market SaaS and e-commerce businesses at the growth inflection point — companies large enough to have data, agile enough to act on it.</p>
+      <p>Every engagement is senior-led. You work directly with the people who designed the methodology — not a project manager and a team of junior analysts. And every deliverable is built for handover: full documentation, training, and independence from day one.</p>
 
-    <p>
-      After a decade of working across analytics, growth, and operations,
-      it became clear that most organizations had access to data,
-      but not clarity.
-    </p>
-
-    <p>
-      Fortify focuses on building analytics dashboards that leaders
-      can trust, adopt, and rely on — without noise or over-engineering.
-    </p>
-
-    <ul class="bullets">
-      <li>Decade of hands-on analytics experience</li>
-      <li>Deep exposure to D2C and consumer businesses</li>
-      <li>Founder-led, senior-driven engagements</li>
-    </ul>
+      <h3>Our conviction</h3>
+      <p><strong>Data is not the advantage. Knowing what to do with it is.</strong> The companies that win are not the ones with the most data — they're the ones who have built the clearest picture of their customer, their revenue, and their market, and who make decisions from that picture every single day.</p>
+      <p>That is what Fortify builds.</p>
+    </div>
+    <div class="mt-40">
+      <a href="index.html#contact" class="btn-outline">Book a Discovery Call</a>
+    </div>
   </div>
 </section>
 
-<footer class="footer">
+<footer>
   <div class="container">
-    <p>© 2025 Fortify Technologies</p>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Fortify Technologies</div>
+        <div class="footer-copy">© 2025 Fortify Technologies. Data Intelligence for Growth Teams.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="services.html">Solutions</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mailto:contact@fortify-technologies.com">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+</script>
 </body>
 </html>
