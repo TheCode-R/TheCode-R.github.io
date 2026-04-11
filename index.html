@@ -3,176 +3,441 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fortify | Experience Certainty</title>
-
-  <meta name="description"
-        content="Enterprise-grade analytics dashboards for D2C brands, built on a decade of analytics expertise." />
-
+  <title>Fortify Technologies — Data Intelligence for Enterprise Growth</title>
+  <meta name="description" content="Fortify Technologies helps mid-market SaaS and e-commerce growth teams drive revenue through Customer Profiling, Churn Analysis, Business Dashboards, MTU Growth, Marketing Optimisation, and Competitor Analysis." />
+  <meta name="keywords" content="customer profiling, churn analysis, business dashboards, MTU growth, marketing campaign optimisation, competitor analysis, SaaS analytics, ecommerce data intelligence" />
+  <meta property="og:title" content="Fortify Technologies — Data Intelligence for Enterprise Growth" />
+  <meta property="og:description" content="Six proven data intelligence solutions for SaaS and e-commerce growth leaders. Built by senior practitioners." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fortify-technologies.com/" />
+  <link rel="canonical" href="https://fortify-technologies.com/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-</head>
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Fortify Technologies",
+    "url": "https://fortify-technologies.com",
+    "description": "Data intelligence solutions for mid-market SaaS and e-commerce growth teams",
+    "email": "contact@fortify-technologies.com",
+    "serviceType": ["Customer Profiling", "Churn Analysis", "Business Dashboards", "MTU Growth", "Marketing Optimisation", "Competitor Analysis"]
+  }
+  </script>
+</head>
 <body>
 
-<!-- HEADER + HERO -->
-<section class="hero-wrap">
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">
-        <span class="logo">Fortify</span>
-        <span class="tagline">Experience Certainty</span>
-      </div>
-      <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="insights.html">Insights</a>
-        <a href="about.html">About</a>
-        <a href="#contact" class="btn btn-primary small">Contact</a>
-      </nav>
-    </div>
-  </header>
+<!-- ===== MOBILE NAV DRAWER ===== -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="index.html" onclick="closeMobileNav()">Home</a>
+  <a href="services.html" onclick="closeMobileNav()">Solutions</a>
+  <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+  <a href="insights.html" onclick="closeMobileNav()">Insights</a>
+  <a href="about.html" onclick="closeMobileNav()">About</a>
+  <a href="#contact" class="btn-outline" onclick="closeMobileNav()">Book a Call</a>
+</div>
 
-  <div class="container hero-content">
-    <h1>Analytics Dashboards Built for Confident Decisions</h1>
-    <p class="hero-sub">
-      Fortify helps D2C and consumer brands replace fragmented reporting
-      with unified, decision-ready analytics across marketing, revenue,
-      and operations.
-    </p>
-    <a href="#contact" class="btn btn-primary large">
-      Book a Free Scoping Call
+<!-- ===== NAV ===== -->
+<nav class="nav" id="mainNav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Fortify Technologies home">
+      <span class="logo">Fortify</span>
+      <span class="tagline">Data Intelligence</span>
     </a>
+    <div class="menu" role="list">
+      <a href="services.html" role="listitem">Solutions</a>
+      <a href="case-studies.html" role="listitem">Case Studies</a>
+      <a href="insights.html" role="listitem">Insights</a>
+      <a href="about.html" role="listitem">About</a>
+      <a href="#contact" class="btn-outline sm" role="listitem">Book a Call</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</section>
+</nav>
 
-<!-- WHAT WE DO -->
-<section class="section">
-  <div class="container narrow">
-    <h2>What We Do</h2>
-    <p class="lead">
-      We design analytics dashboards that founders and leadership teams
-      rely on to run the business — not just review numbers.
+<!-- ===== HERO ===== -->
+<header class="hero-wrap" role="banner">
+  <div class="container hero-content">
+    <div class="section-label">Fortify Technologies</div>
+    <h1>
+      Grow Revenue.<br>
+      Reduce Churn.<br>
+      <em>Understand Your Customers.</em>
+    </h1>
+    <p class="hero-sub">
+      We turn fragmented business data into <strong>intelligence that drives decisions</strong> — for SaaS companies and e-commerce brands that are ready to compete on clarity, not instinct.
     </p>
-
-    <ul class="bullets">
-      <li>Unified dashboards across marketing, revenue, and operations</li>
-      <li>Clear KPI definitions aligned with business outcomes</li>
-      <li>Automated reporting with a single source of truth</li>
-      <li>Dashboards designed for weekly and daily leadership reviews</li>
-      <li>Analytics built for scale, not short-term reporting</li>
-    </ul>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-outline">Book a Discovery Call</a>
+      <a href="services.html" class="btn-outline" style="border-color: var(--grey-4); color: var(--grey-5);">See Our Solutions</a>
+    </div>
+    <div class="hero-audience">
+      <span class="audience-label">Built for</span>
+      <span class="chip">SaaS · $5M–$50M ARR</span>
+      <span class="chip">E-commerce · $10M–$100M GMV</span>
+      <span class="chip">CMOs &amp; Growth Leads</span>
+    </div>
   </div>
-</section>
+</header>
 
-<!-- PROBLEMS WE SOLVE -->
-<section class="section light">
-  <div class="container narrow">
-    <h2>Problems We Solve</h2>
-    <p class="lead">
-      Most analytics challenges are not technical — they are structural.
-    </p>
-
-    <ul class="bullets">
-      <li>Data scattered across Shopify, ad platforms, logistics, and finance</li>
-      <li>Different teams trusting different numbers</li>
-      <li>Manual Excel reporting consuming leadership time</li>
-      <li>Dashboards built but not adopted or trusted</li>
-      <li>Decision-making driven by instinct instead of clarity</li>
-    </ul>
+<!-- ===== TICKER ===== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><strong>Customer Profiling</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Churn Analysis</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Business Dashboards</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>MTU Growth</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Marketing Optimisation</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Competitor Analysis</strong></span>
+    <span class="ticker-item">·</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item"><strong>Customer Profiling</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Churn Analysis</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Business Dashboards</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>MTU Growth</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Marketing Optimisation</strong></span>
+    <span class="ticker-item">·</span>
+    <span class="ticker-item"><strong>Competitor Analysis</strong></span>
+    <span class="ticker-item">·</span>
   </div>
-</section>
+</div>
 
-<!-- HOW WE WORK -->
-<section class="section">
-  <div class="container narrow">
-    <h2>How We Work</h2>
-    <p class="lead">
-      Our approach is deliberately simple, senior-led, and outcome-driven.
-    </p>
-
-    <ol class="steps">
-      <li>
-        <strong>Define Decisions First</strong><br />
-        We start by understanding the decisions founders and leaders
-        need to make — not the data available.
-      </li>
-      <li>
-        <strong>Align on Metrics</strong><br />
-        We agree on a small set of metrics that truly matter to the business.
-      </li>
-      <li>
-        <strong>Unify the Data</strong><br />
-        We bring all critical data into a single, reliable model.
-      </li>
-      <li>
-        <strong>Design for Adoption</strong><br />
-        Dashboards are built to be used, trusted, and revisited regularly.
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- WHO IT IS NOT FOR -->
-<section class="section light">
-  <div class="container narrow">
-    <h2>Who This Is Not For</h2>
-    <p class="lead">
-      Fortify is not the right fit for every organization.
-    </p>
-
-    <ul class="bullets">
-      <li>Teams looking for quick, template-based dashboards</li>
-      <li>Organizations focused only on vanity metrics</li>
-      <li>Businesses seeking low-cost, junior-only execution</li>
-    </ul>
-  </div>
-</section>
-
-<!-- TOOLS -->
-<section class="section">
-  <div class="container narrow">
-    <h2>Tools & Platforms</h2>
-    <p class="lead">
-      Tools are chosen based on usability, scale, and long-term fit.
-    </p>
-
-    <div class="tools">
-      <span>Power BI</span>
-      <span>Tableau</span>
-      <span>Looker Studio</span>
-      <span>Metabase</span>
-      <span>Excel Dashboards</span>
+<!-- ===== WHO WE SERVE ===== -->
+<section class="section" aria-labelledby="serve-heading">
+  <div class="container">
+    <div class="section-label">Who We Serve</div>
+    <h2 id="serve-heading">We work with companies at the growth inflection point.</h2>
+    <p class="section-lead">Large enough to have data. Agile enough to act on it. At the exact stage where data intelligence pays back most.</p>
+    <div class="serve-grid">
+      <div class="serve-card">
+        <div class="serve-card-tag">Sector 01</div>
+        <h3>SaaS &amp; Tech Companies</h3>
+        <p>You're growing but churn is eating your gains. Your team trusts different numbers. Acquisition cost is rising and you can't tell which campaigns are actually working.</p>
+        <p>We build the intelligence layer that tells you exactly what's happening — and what to do next.</p>
+        <div class="serve-stat">
+          <div class="serve-stat-item">
+            <div class="serve-stat-val">$5M</div>
+            <div class="serve-stat-label">Min ARR</div>
+          </div>
+          <div class="serve-stat-item">
+            <div class="serve-stat-val">$50M</div>
+            <div class="serve-stat-label">Max ARR</div>
+          </div>
+          <div class="serve-stat-item">
+            <div class="serve-stat-val">100+</div>
+            <div class="serve-stat-label">Employees</div>
+          </div>
+        </div>
+      </div>
+      <div class="serve-card">
+        <div class="serve-card-tag">Sector 02</div>
+        <h3>E-commerce &amp; Retail Brands</h3>
+        <p>Your data lives in Shopify, Meta, Google, and three logistics platforms. No one agrees on a single number. Manual Excel reports are consuming your team's week.</p>
+        <p>We unify it all and turn it into a competitive advantage your rivals can't easily copy.</p>
+        <div class="serve-stat">
+          <div class="serve-stat-item">
+            <div class="serve-stat-val">$10M</div>
+            <div class="serve-stat-label">Min GMV</div>
+          </div>
+          <div class="serve-stat-item">
+            <div class="serve-stat-val">$100M</div>
+            <div class="serve-stat-label">Max GMV</div>
+          </div>
+          <div class="serve-stat-item">
+            <div class="serve-stat-val">D2C</div>
+            <div class="serve-stat-label">Focus</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT / CALENDLY -->
-<section id="contact" class="section cta">
-  <div class="container narrow">
-    <h2>Bring Certainty to Your Data</h2>
-    <p class="lead">No sales pitch. Just clarity.</p>
+<!-- ===== SOLUTIONS ===== -->
+<section class="section bg-dark" id="solutions" aria-labelledby="solutions-heading">
+  <div class="container">
+    <div class="section-label">Our Solutions</div>
+    <h2 id="solutions-heading">Six intelligence systems. One growth outcome.</h2>
+    <p class="section-lead">Each solution is a proven framework built to move a specific number that matters to your business.</p>
 
-    <div class="calendly-wrapper">
-      <div class="calendly-inline-widget"
-           data-url="https://calendly.com/ankitsethi-radaur/30min"
-           style="min-width:320px;height:630px;">
+    <div class="services-layout" role="tablist" aria-label="Solutions">
+      <!-- TABS -->
+      <div class="services-tabs">
+        <button class="svc-tab active" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" onclick="switchTab(1)">
+          <span class="svc-tab-num">01</span>
+          <span class="svc-tab-name">Customer Profiling</span>
+        </button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" onclick="switchTab(2)">
+          <span class="svc-tab-num">02</span>
+          <span class="svc-tab-name">Churn Analysis</span>
+        </button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" onclick="switchTab(3)">
+          <span class="svc-tab-num">03</span>
+          <span class="svc-tab-name">Business Dashboards</span>
+        </button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4" onclick="switchTab(4)">
+          <span class="svc-tab-num">04</span>
+          <span class="svc-tab-name">MTU Growth</span>
+        </button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5" onclick="switchTab(5)">
+          <span class="svc-tab-num">05</span>
+          <span class="svc-tab-name">Campaign Optimisation</span>
+        </button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="panel-6" id="tab-6" onclick="switchTab(6)">
+          <span class="svc-tab-num">06</span>
+          <span class="svc-tab-name">Competitor Analysis</span>
+        </button>
       </div>
+
+      <!-- PANELS -->
+      <div class="services-panel">
+        <div class="svc-panel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+          <div class="section-label">Solution 01</div>
+          <h3>Customer Profiling</h3>
+          <p class="svc-panel-desc">Most businesses know their revenue numbers. Very few know <em>who</em> is generating that revenue — and why. Customer Profiling builds a precise, actionable picture of your customer base so every growth decision is made with full context.</p>
+          <ul class="svc-outcomes">
+            <li>RFM segmentation with predictive lifetime value scoring</li>
+            <li>Behavioural clustering to reveal untapped high-value segments</li>
+            <li>Unified 360° customer view across all data touchpoints</li>
+            <li>Persona mapping aligned to acquisition and retention strategy</li>
+          </ul>
+          <a href="#contact" class="btn-outline sm">Discuss This Solution</a>
+        </div>
+
+        <div class="svc-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+          <div class="section-label">Solution 02</div>
+          <h3>Churn Analysis</h3>
+          <p class="svc-panel-desc">Churn is the silent revenue drain that compounds every quarter. We build early-warning intelligence systems that identify at-risk customers before they leave — giving your team the time and context to act.</p>
+          <ul class="svc-outcomes">
+            <li>Predictive churn scoring applied to your live customer base</li>
+            <li>Root-cause analysis: identifying the real reasons customers leave</li>
+            <li>Early-warning triggers for customer success intervention</li>
+            <li>Retention playbooks built on behavioural signal data</li>
+          </ul>
+          <a href="#contact" class="btn-outline sm">Discuss This Solution</a>
+        </div>
+
+        <div class="svc-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+          <div class="section-label">Solution 03</div>
+          <h3>Business Dashboards</h3>
+          <p class="svc-panel-desc">Replace 14 spreadsheets, three BI tools, and a weekly email thread with one authoritative view of the business. Built for daily leadership use — not quarterly reviews that nobody reads.</p>
+          <ul class="svc-outcomes">
+            <li>Single source of truth across revenue, operations, and marketing</li>
+            <li>Real-time KPIs aligned to the decisions your team needs to make</li>
+            <li>Built in Power BI, Tableau, Looker Studio, or Metabase</li>
+            <li>Designed for adoption — dashboards your team actually opens daily</li>
+          </ul>
+          <a href="#contact" class="btn-outline sm">Discuss This Solution</a>
+        </div>
+
+        <div class="svc-panel" id="panel-4" role="tabpanel" aria-labelledby="tab-4">
+          <div class="section-label">Solution 04</div>
+          <h3>Monthly Transacting Users Growth</h3>
+          <p class="svc-panel-desc">MTU is the single metric that tells you whether your business is truly growing. We build the full Acquisition → Retention → Reactivation framework in one cohesive intelligence system.</p>
+          <ul class="svc-outcomes">
+            <li>Cohort-level acquisition analysis by channel, campaign, and segment</li>
+            <li>Retention curves that expose the exact drop-off point in the journey</li>
+            <li>Win-back model to reactivate dormant high-value customers</li>
+            <li>MTU forecasting model for growth planning and scenario analysis</li>
+          </ul>
+          <a href="#contact" class="btn-outline sm">Discuss This Solution</a>
+        </div>
+
+        <div class="svc-panel" id="panel-5" role="tabpanel" aria-labelledby="tab-5">
+          <div class="section-label">Solution 05</div>
+          <h3>Marketing Campaign Optimisation</h3>
+          <p class="svc-panel-desc">Stop allocating budget to campaigns that feel like they're working. We build closed-loop attribution that shows exactly which spend drives which outcome — and a reallocation model that maximises every pound spent.</p>
+          <ul class="svc-outcomes">
+            <li>Multi-touch attribution across paid, owned, and earned channels</li>
+            <li>Incrementality testing to validate what is actually driving growth</li>
+            <li>Spend reallocation model with ROI impact forecasting</li>
+            <li>Campaign performance benchmarking against industry standards</li>
+          </ul>
+          <a href="#contact" class="btn-outline sm">Discuss This Solution</a>
+        </div>
+
+        <div class="svc-panel" id="panel-6" role="tabpanel" aria-labelledby="tab-6">
+          <div class="section-label">Solution 06</div>
+          <h3>Competitor Analysis</h3>
+          <p class="svc-panel-desc">Know where you stand in the market from structured intelligence, not from guesswork or analyst reports. We map the competitive landscape so you can see what rivals are doing, where they're winning, and where they're exposed.</p>
+          <ul class="svc-outcomes">
+            <li>Pricing, positioning, and product gap analysis</li>
+            <li>Digital share-of-voice and organic search intent mapping</li>
+            <li>Competitive whitespace identification and opportunity sizing</li>
+            <li>Ongoing monitoring framework for market movement alerts</li>
+          </ul>
+          <a href="#contact" class="btn-outline sm">Discuss This Solution</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATEMENT ===== -->
+<div class="statement">
+  <div class="container">
+    <h2>Data is not the advantage.<br><em>Knowing what to do with it is.</em></h2>
+    <a href="#contact" class="btn-outline dark">Start a Conversation</a>
+  </div>
+</div>
+
+<!-- ===== METHODOLOGY ===== -->
+<section class="section" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="section-label">Our Process</div>
+    <h2 id="process-heading">How we work</h2>
+    <p class="section-lead">Every engagement follows the same disciplined process. Decisions first. Data second. Always senior-led.</p>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <h4>Discovery &amp; Diagnostic</h4>
+        <p>We audit your current data infrastructure, tooling, and decision-making process to locate exactly where intelligence is failing.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <h4>Define Decisions</h4>
+        <p>Before touching data, we agree on the decisions that need to be made. Metrics are chosen to serve decisions, not to fill a dashboard.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <h4>Unify the Data</h4>
+        <p>All sources are connected, cleaned, and unified into a single reliable model. One truth. Always current. Always trusted.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">04</div>
+        <h4>Build &amp; Deploy</h4>
+        <p>We build the solution and embed it into your team's workflow so it gets used every day — not just in the first week.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">05</div>
+        <h4>Enable &amp; Handover</h4>
+        <p>Your team owns the output. We train, document, and hand over everything so you are never dependent on us to maintain it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CREDIBILITY ===== -->
+<section class="section bg-dark" aria-labelledby="cred-heading">
+  <div class="container">
+    <div class="section-label">Why Fortify</div>
+    <h2 id="cred-heading">Built by practitioners. Not theorists.</h2>
+    <p class="section-lead">Fortify is a new firm. The methodology is not. Our frameworks were proven inside real growth-stage businesses before Fortify existed.</p>
+    <div class="cred-grid">
+      <div class="cred-item">
+        <div class="cred-num">6</div>
+        <div class="cred-label">Intelligence Systems</div>
+        <p>Six proven frameworks built to move specific business metrics — not generic analytics services.</p>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">2</div>
+        <div class="cred-label">Sectors. Deep Expertise.</div>
+        <p>SaaS and e-commerce only. We know the benchmarks, the failure modes, and the fastest path to insight.</p>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">100%</div>
+        <div class="cred-label">Senior-led Delivery</div>
+        <p>You get the people who built the methodology on your account. No handoffs. No learning on your budget.</p>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">1</div>
+        <div class="cred-label">Source of Truth. Always.</div>
+        <p>Every engagement ends with one authoritative data model. No more teams trusting different numbers.</p>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">0</div>
+        <div class="cred-label">Dependency After Handover</div>
+        <p>We build for independence. Full documentation, training, and handover so your team runs it alone.</p>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">30</div>
+        <div class="cred-label">Minute Discovery Call</div>
+        <p>Not a sales pitch. A working session — you leave with clarity on what your data is missing, regardless of whether you work with us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA / CONTACT ===== -->
+<section class="cta-section" id="contact" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="section-label">Get Started</div>
+    <h2 id="cta-heading">Your data already knows where growth is leaking.</h2>
+    <p>Book a 30-minute discovery call. No pitch. No pressure. Just a clear conversation about what your data is — and isn't — telling you.</p>
+    <div class="calendly-wrapper">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/ankitsethi-radaur/30min" style="min-width:280px;height:630px;"></div>
       <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
     </div>
-
-    <p class="contact-alt">
-      Or email:
-      <a href="mailto:contact@fortify-technologies.com">
-        contact@fortify-technologies.com
-      </a>
-    </p>
+    <p class="contact-alt">Prefer email? <a href="mailto:contact@fortify-technologies.com">contact@fortify-technologies.com</a></p>
   </div>
 </section>
 
-<footer class="footer">
+<!-- ===== FOOTER ===== -->
+<footer>
   <div class="container">
-    <p>© 2025 Fortify Technologies</p>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Fortify Technologies</div>
+        <div class="footer-copy">© 2025 Fortify Technologies. Data Intelligence for Growth Teams.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="services.html">Solutions</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mailto:contact@fortify-technologies.com">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
+<script>
+  // Nav scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  // Service tabs
+  function switchTab(n) {
+    document.querySelectorAll('.svc-tab').forEach((t, i) => {
+      const active = i + 1 === n;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', active);
+    });
+    document.querySelectorAll('.svc-panel').forEach((p, i) => {
+      p.classList.toggle('active', i + 1 === n);
+    });
+  }
+</script>
 </body>
 </html>
