@@ -3,62 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Case Studies | Fortify</title>
+  <title>Case Studies — Fortify Technologies</title>
+  <meta name="description" content="See how Fortify Technologies has helped SaaS and e-commerce businesses reduce churn, grow MTU, and make smarter decisions with data intelligence." />
+  <link rel="canonical" href="https://fortify-technologies.com/case-studies.html" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-<header class="nav simple">
-  <div class="container nav-inner">
-    <div class="brand">
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMobileNav()">Home</a>
+  <a href="services.html" onclick="closeMobileNav()">Solutions</a>
+  <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+  <a href="insights.html" onclick="closeMobileNav()">Insights</a>
+  <a href="about.html" onclick="closeMobileNav()">About</a>
+  <a href="index.html#contact" class="btn-outline" onclick="closeMobileNav()">Book a Call</a>
+</div>
+
+<nav class="nav scrolled" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
       <span class="logo">Fortify</span>
-      <span class="tagline">Experience Certainty</span>
-    </div>
-    <nav class="menu">
-      <a href="index.html">Home</a>
+      <span class="tagline">Data Intelligence</span>
+    </a>
+    <div class="menu">
+      <a href="services.html">Solutions</a>
+      <a href="case-studies.html" class="active">Case Studies</a>
       <a href="insights.html">Insights</a>
       <a href="about.html">About</a>
-    </nav>
+      <a href="index.html#contact" class="btn-outline sm">Book a Call</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</header>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">Case Studies</div>
+    <h1>The work, and<br>what it produced.</h1>
+    <p>Fortify is a new firm. Case studies from our first engagements will be published here as they complete. In the meantime, book a discovery call to discuss your specific situation.</p>
+  </div>
+</div>
 
 <section class="section">
-  <div class="container narrow">
-    <h1>Representative Case Studies</h1>
-    <p class="lead">
-      Examples of how Fortify approaches analytics challenges for growing D2C brands.
-    </p>
-
-    <h3>Marketing ROI Visibility for a Growing D2C Brand</h3>
-    <p>
-      A fast-scaling D2C brand struggled with fragmented marketing data
-      across platforms, leading to unclear ROI and slow decision-making.
-    </p>
-    <ul class="bullets">
-      <li>Unified paid media and revenue data</li>
-      <li>Defined decision-ready performance metrics</li>
-      <li>Improved weekly leadership reviews</li>
-    </ul>
-
-    <h3>Operations & Fulfillment Clarity at Scale</h3>
-    <p>
-      As order volumes increased, leadership lacked a consolidated view
-      of fulfillment performance and operational bottlenecks.
-    </p>
-    <ul class="bullets">
-      <li>Centralized order and logistics data</li>
-      <li>Improved visibility into operational KPIs</li>
-      <li>Reduced manual reporting dependency</li>
-    </ul>
+  <div class="container">
+    <!-- Placeholder state — honest, no fake case studies -->
+    <div style="border:1px solid var(--grey-3); padding:72px 48px; text-align:center; max-width:680px; margin:0 auto;">
+      <div class="section-label" style="justify-content:center; margin-bottom:24px;">Coming Soon</div>
+      <p style="font-size:1.1rem; color:var(--grey-5); font-weight:300; line-height:1.8; margin-bottom:32px;">
+        We are in our first engagements now. Detailed case studies with real outcomes will be published here as work completes. We do not publish case studies before we have the results to back them up.
+      </p>
+      <a href="index.html#contact" class="btn-outline">Discuss Your Situation Instead</a>
+    </div>
   </div>
 </section>
 
-<footer class="footer">
+<footer>
   <div class="container">
-    <p>© 2025 Fortify Technologies</p>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Fortify Technologies</div>
+        <div class="footer-copy">© 2025 Fortify Technologies. Data Intelligence for Growth Teams.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="services.html">Solutions</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mailto:contact@fortify-technologies.com">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+</script>
 </body>
 </html>
