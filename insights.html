@@ -3,65 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Insights | Fortify</title>
+  <title>Insights — Fortify Technologies</title>
+  <meta name="description" content="Practical thinking on data intelligence, churn analysis, customer profiling, and growth for SaaS and e-commerce teams." />
+  <link rel="canonical" href="https://fortify-technologies.com/insights.html" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-<header class="nav simple">
-  <div class="container nav-inner">
-    <div class="brand">
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMobileNav()">Home</a>
+  <a href="services.html" onclick="closeMobileNav()">Solutions</a>
+  <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+  <a href="insights.html" onclick="closeMobileNav()">Insights</a>
+  <a href="about.html" onclick="closeMobileNav()">About</a>
+  <a href="index.html#contact" class="btn-outline" onclick="closeMobileNav()">Book a Call</a>
+</div>
+
+<nav class="nav scrolled" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
       <span class="logo">Fortify</span>
-      <span class="tagline">Experience Certainty</span>
-    </div>
-    <nav class="menu">
-      <a href="index.html">Home</a>
+      <span class="tagline">Data Intelligence</span>
+    </a>
+    <div class="menu">
+      <a href="services.html">Solutions</a>
       <a href="case-studies.html">Case Studies</a>
+      <a href="insights.html" class="active">Insights</a>
       <a href="about.html">About</a>
-    </nav>
+      <a href="index.html#contact" class="btn-outline sm">Book a Call</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</header>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">Insights</div>
+    <h1>Practical thinking<br>on data intelligence.</h1>
+    <p>No thought leadership for its own sake. Only ideas that change how growth teams use data.</p>
+  </div>
+</div>
 
 <section class="section">
-  <div class="container narrow">
-    <h1>Insights</h1>
-    <p class="lead">
-      Perspectives on analytics, decision-making, and building clarity
-      in growing D2C businesses.
-    </p>
-
-    <div class="insight">
-      <h3>Why Most Dashboards Fail to Influence Decisions</h3>
-      <p>
-        Dashboards often fail not because of missing data, but because
-        they are not designed around decisions leaders actually make.
-      </p>
-    </div>
-
-    <div class="insight">
-      <h3>Metrics That Matter as D2C Brands Scale</h3>
-      <p>
-        As complexity increases, founders must reduce the number of
-        metrics they rely on — not increase them.
-      </p>
-    </div>
-
-    <div class="insight">
-      <h3>From Reporting to Decision Systems</h3>
-      <p>
-        Analytics should evolve from passive reporting to actively
-        enabling confident, repeatable decisions.
-      </p>
+  <div class="container">
+    <div class="cards-grid">
+      <article class="card-item">
+        <div class="card-tag">Churn Analysis</div>
+        <h3>The 3 churn signals most SaaS teams ignore until it's too late</h3>
+        <p>Most churn prediction models look at the wrong signals. Here are the three behavioural indicators that predict cancellation 60–90 days out — and how to act on them.</p>
+        <a href="index.html#contact" class="card-link">Discuss with us</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">MTU Growth</div>
+        <h3>Why Monthly Transacting Users beats MAU for growth decisions</h3>
+        <p>MAU tells you who logged in. MTU tells you who gave you money. The difference in those two numbers contains your entire growth problem.</p>
+        <a href="index.html#contact" class="card-link">Discuss with us</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Customer Profiling</div>
+        <h3>RFM segmentation: why most implementations get the R wrong</h3>
+        <p>Recency is the most powerful RFM variable — and the most commonly miscalculated. Here's how a small change to how you measure it completely changes your segment outputs.</p>
+        <a href="index.html#contact" class="card-link">Discuss with us</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Marketing Optimisation</div>
+        <h3>Last-click attribution is costing you more than you think</h3>
+        <p>If your marketing decisions are based on last-click data, you are systematically over-investing in channels that close and under-investing in the ones that actually create demand.</p>
+        <a href="index.html#contact" class="card-link">Discuss with us</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Business Dashboards</div>
+        <h3>The real reason dashboards don't get used — and how to fix it</h3>
+        <p>95% of dashboard failures are not technical. They happen because the dashboard was built around available data, not around the decisions that need to be made. Here's the fix.</p>
+        <a href="index.html#contact" class="card-link">Discuss with us</a>
+      </article>
+      <article class="card-item">
+        <div class="card-tag">Competitor Analysis</div>
+        <h3>How to build a competitor intelligence system that stays current</h3>
+        <p>One-time competitor research is obsolete in six months. Here is the lightweight monitoring framework that keeps you updated without consuming analyst time every week.</p>
+        <a href="index.html#contact" class="card-link">Discuss with us</a>
+      </article>
     </div>
   </div>
 </section>
 
-<footer class="footer">
+<footer>
   <div class="container">
-    <p>© 2025 Fortify Technologies</p>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Fortify Technologies</div>
+        <div class="footer-copy">© 2025 Fortify Technologies. Data Intelligence for Growth Teams.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="services.html">Solutions</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mailto:contact@fortify-technologies.com">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+</script>
 </body>
 </html>
