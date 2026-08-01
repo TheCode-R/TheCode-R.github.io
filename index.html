@@ -1,62 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fortify Technologies — AI-Native Data Intelligence for Enterprise Growth</title>
-  <meta name="description" content="Fortify Technologies deploys AI-powered data intelligence to help mid-market SaaS and e-commerce growth teams reduce churn, grow revenue, and outpace competitors." />
-  <meta name="keywords" content="AI data intelligence, customer profiling AI, churn analysis, business dashboards, MTU growth, marketing optimisation, competitor analysis, SaaS analytics, ecommerce AI" />
-  <meta property="og:title" content="Fortify Technologies — AI-Native Data Intelligence" />
-  <meta property="og:description" content="AI-powered intelligence systems for SaaS and e-commerce growth leaders. Six proven solutions. Senior-led. Built AI-native from day one." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://fortify-technologies.com/" />
-  <link rel="canonical" href="https://fortify-technologies.com/" />
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/assets/css/base.css" />
-  <link rel="stylesheet" href="/assets/css/nav.css" />
-  <link rel="stylesheet" href="/assets/css/components.css" />
-  <link rel="stylesheet" href="/assets/css/pages.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Fortify Technologies",
-    "url": "https://fortify-technologies.com",
-    "description": "AI-native data intelligence for mid-market SaaS and e-commerce growth teams",
-    "email": "contact@fortify-technologies.com",
-    "knowsAbout": ["Artificial Intelligence", "Data Intelligence", "Customer Profiling", "Churn Analysis", "Business Dashboards", "MTU Growth", "Marketing Optimisation", "Competitor Analysis"]
-  }
-  </script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fortify Technologies — AI-Native Data Intelligence for Enterprise Growth</title>
+<meta name="description" content="Fortify Technologies deploys AI-powered data intelligence to help mid-market SaaS and e-commerce growth teams reduce churn, grow revenue, and outpace competitors." />
+<meta name="keywords" content="AI data intelligence, customer profiling AI, churn analysis, business dashboards, MTU growth, marketing optimisation, competitor analysis, SaaS analytics, ecommerce AI" />
+<meta property="og:title" content="Fortify Technologies — AI-Native Data Intelligence" />
+<meta property="og:description" content="AI-powered intelligence systems for SaaS and e-commerce growth leaders. Six proven solutions. Senior-led. Built AI-native from day one." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://fortify-technologies.com/" />
+<link rel="canonical" href="https://fortify-technologies.com/" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Fortify Technologies",
+  "url": "https://fortify-technologies.com",
+  "description": "AI-native data intelligence for mid-market SaaS and e-commerce growth teams",
+  "email": "contact@fortify-technologies.com",
+  "knowsAbout": ["Artificial Intelligence", "Data Intelligence", "Customer Profiling", "Churn Analysis", "Business Dashboards", "MTU Growth", "Marketing Optimisation", "Competitor Analysis"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   FORTIFY — "LIVE WIRE" system
+   Deep-current navy · porcelain · electric signal green
+   Classic serif spine, live-data energy
+   ============================================================ */
+:root{
+  --bg:       #070D17;
+  --bg-2:     #0A1220;
+  --panel:    #0E1929;
+  --paper:    #EDF1F1;
+  --muted:    #8B98A9;
+  --wire:     #2FE6A0;   /* the live wire */
+  --wire-hi:  #7CF5C8;
+  --wire-dim: #17805B;
+  --glow:     rgba(47,230,160,.22);
+  --rule:     rgba(237,241,241,.12);
+  --rule-soft:rgba(237,241,241,.07);
+
+  --serif: 'Newsreader', Georgia, serif;
+  --sans:  'Instrument Sans', system-ui, sans-serif;
+  --mono:  'IBM Plex Mono', 'Courier New', monospace;
+
+  --nav-h: 72px;
+  --max-w: 1220px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--paper);
+  font-family:var(--sans);
+  font-size:16.5px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg,video,canvas{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul,ol{list-style:none}
+::selection{background:var(--wire);color:var(--bg)}
+:focus-visible{outline:2px solid var(--wire);outline-offset:3px}
+
+.container{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 40px}
+@media (max-width:640px){.container{padding:0 22px}}
+
+/* ---- Type ---- */
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--wire);display:flex;align-items:center;gap:12px;margin-bottom:22px;
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--wire);box-shadow:0 0 8px var(--glow)}
+h2.h-display{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.06;letter-spacing:-.015em;
+  max-width:18em;
+}
+.section-sub{color:var(--muted);max-width:38em;margin-top:18px;font-size:1.05rem}
+em{font-style:italic}
+
+/* wire underline that draws in on scroll */
+.wire-u{position:relative;display:inline-block}
+.wire-u::after{
+  content:"";position:absolute;left:0;bottom:-8px;height:2px;width:100%;
+  background:linear-gradient(90deg,var(--wire),transparent);
+  transform:scaleX(0);transform-origin:left;transition:transform 1s .3s cubic-bezier(.2,.7,.2,1);
+  box-shadow:0 0 12px var(--glow);
+}
+.in .wire-u::after{transform:scaleX(1)}
+
+/* ---- Buttons ---- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:600;font-size:.86rem;letter-spacing:.02em;
+  padding:14px 26px;border-radius:2px;position:relative;
+  transition:background .2s,color .2s,border-color .2s,box-shadow .3s,transform .15s;
+}
+.btn-wire{background:var(--wire);color:#05231A}
+.btn-wire:hover{background:var(--wire-hi);box-shadow:0 0 28px var(--glow);transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--rule);color:var(--paper)}
+.btn-ghost:hover{border-color:var(--wire);color:var(--wire)}
+.btn-lg{padding:16px 32px;font-size:.92rem}
+.btn-sm{padding:10px 18px;font-size:.8rem}
+.btn-pulse{animation:btnPulse 3s infinite}
+@keyframes btnPulse{0%,100%{box-shadow:0 0 0 0 rgba(47,230,160,.35)}55%{box-shadow:0 0 0 14px rgba(47,230,160,0)}}
+@media (prefers-reduced-motion: reduce){.btn-pulse{animation:none}}
+
+/* ============================================================ NAV */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;height:var(--nav-h);
+  display:flex;align-items:center;
+  background:rgba(7,13,23,.72);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid transparent;transition:border-color .3s;
+}
+.nav.scrolled{border-bottom-color:var(--rule-soft)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--max-w);margin:0 auto;padding:0 40px}
+.nav-brand{display:flex;flex-direction:column;line-height:1}
+.nav-logo{font-family:var(--serif);font-size:1.55rem;font-weight:500}
+.nav-tagline{font-family:var(--mono);font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:var(--wire);margin-top:4px}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links > a{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);transition:color .2s,text-shadow .2s;padding:4px 0;
+}
+.nav-links > a:hover{color:var(--wire);text-shadow:0 0 14px var(--glow)}
+.nav-cta{background:var(--wire);color:#05231A!important;padding:11px 20px;border-radius:2px;font-family:var(--sans)!important;font-weight:600;font-size:.8rem!important;letter-spacing:.02em!important;text-transform:none!important}
+.nav-cta:hover{background:var(--wire-hi);color:#05231A!important;text-shadow:none!important}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;padding:8px}
+.nav-hamburger span{width:22px;height:1.5px;background:var(--paper)}
+.nav-drawer{position:fixed;inset:var(--nav-h) 0 auto 0;z-index:899;background:var(--bg-2);border-bottom:1px solid var(--rule);display:none;flex-direction:column;padding:14px 22px 26px}
+.nav-drawer.open{display:flex}
+.nav-drawer a{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:13px 0;border-bottom:1px solid var(--rule-soft);color:var(--muted)}
+.nav-drawer .drawer-cta{background:var(--wire);color:#05231A;text-align:center;margin-top:14px;padding:14px;border-radius:2px;font-family:var(--sans);font-weight:600;text-transform:none;letter-spacing:.02em;border:none}
+@media (max-width:900px){.nav-links{display:none}.nav-hamburger{display:flex}}
+
+/* ============================================================ HERO */
+.hero{position:relative;padding:calc(var(--nav-h) + 84px) 0 0;overflow:hidden}
+#wireCanvas{
+  position:absolute;inset:0;width:100%;height:100%;
+  z-index:0;opacity:.9;pointer-events:none;
+}
+.hero::after{ /* vignette so text stays readable */
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse 80% 70% at 30% 40%, rgba(7,13,23,.55), rgba(7,13,23,.1) 60%),
+             linear-gradient(180deg, rgba(7,13,23,.2), rgba(7,13,23,.9) 96%);
+}
+.hero .container{position:relative;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero h1{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(2.7rem,5.4vw,4.4rem);line-height:1.03;letter-spacing:-.02em;
+}
+.hero h1 em{
+  color:var(--wire);
+  text-shadow:0 0 30px var(--glow);
+}
+.hero h1 .cursor{
+  display:inline-block;width:3px;height:.85em;background:var(--wire);
+  vertical-align:-0.08em;margin-left:6px;animation:blink 1.1s steps(1) infinite;
+  box-shadow:0 0 12px var(--glow);
+}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.hero h1 .cursor{animation:none}}
+.hero-sub{color:var(--muted);font-size:1.12rem;max-width:32em;margin-top:26px}
+.hero-sub strong{color:var(--paper);font-weight:600}
+.hero-actions{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+
+/* ---- The live signal card ---- */
+.signal{
+  background:linear-gradient(180deg, rgba(14,25,41,.92), rgba(10,18,32,.92));
+  border:1px solid var(--rule);
+  border-radius:4px;padding:24px 24px 16px;
+  box-shadow:0 0 0 1px rgba(47,230,160,.06), 0 30px 60px -30px rgba(0,0,0,.8), 0 0 60px -20px var(--glow);
+}
+.signal-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.signal-title{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.signal-live{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--wire);display:flex;align-items:center;gap:7px}
+.signal-live i{width:6px;height:6px;border-radius:50%;background:var(--wire);box-shadow:0 0 10px var(--wire);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+#liveChart{width:100%;height:260px}
+.signal-legend{
+  display:flex;gap:22px;font-family:var(--mono);font-size:.66rem;color:var(--muted);
+  border-top:1px solid var(--rule-soft);margin-top:14px;padding-top:12px;letter-spacing:.05em;
+}
+.signal-legend .k-ai{color:var(--wire)}
+.signal-legend .k-lag{color:#5B6878}
+
+/* live activity feed */
+.feed{
+  margin-top:14px;border-top:1px solid var(--rule-soft);padding-top:12px;
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;height:1.5em;overflow:hidden;position:relative;
+}
+.feed-line{position:absolute;inset:0;display:flex;gap:10px;opacity:0;transform:translateY(8px);transition:opacity .45s,transform .45s;color:var(--muted);white-space:nowrap}
+.feed-line.on{opacity:1;transform:none}
+.feed-line b{color:var(--wire);font-weight:500}
+.feed-note{font-family:var(--mono);font-size:.58rem;color:#54606F;letter-spacing:.1em;text-transform:uppercase;margin-top:10px}
+
+.hero-strip{
+  margin-top:70px;border-top:1px solid var(--rule-soft);
+  display:flex;gap:14px 36px;flex-wrap:wrap;align-items:baseline;padding:18px 0 26px;
+}
+.hero-strip .lbl{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.hero-strip .itm{font-size:.9rem;font-weight:500}
+.hero-strip .itm span{color:var(--wire);margin-right:8px}
+
+/* ============================================================ TICKER */
+.ticker{
+  background:linear-gradient(90deg, rgba(47,230,160,.08), rgba(47,230,160,.02), rgba(47,230,160,.08));
+  border-top:1px solid var(--rule-soft);border-bottom:1px solid var(--rule-soft);
+  overflow:hidden;padding:14px 0;position:relative;
+}
+.ticker-track{display:flex;width:max-content;animation:tick 32s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@media (prefers-reduced-motion: reduce){.ticker-track{animation:none}}
+.ticker-item{
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--paper);white-space:nowrap;padding:0 28px;position:relative;
+}
+.ticker-item::after{content:"";position:absolute;right:-3px;top:50%;width:5px;height:5px;border-radius:50%;background:var(--wire);box-shadow:0 0 8px var(--wire);transform:translateY(-50%)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ============================================================ SECTIONS */
+.section{padding:110px 0;position:relative}
+.section-tint{background:var(--bg-2)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}
+@media (prefers-reduced-motion: reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ---- Who we serve ---- */
+.serve-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:56px}
+.serve-card{
+  background:var(--panel);border:1px solid var(--rule-soft);border-radius:4px;
+  padding:38px 36px 30px;position:relative;overflow:hidden;
+  transition:border-color .3s,transform .3s,box-shadow .3s;
+}
+.serve-card::before{ /* scanning wire on top edge */
+  content:"";position:absolute;top:0;left:-40%;width:40%;height:2px;
+  background:linear-gradient(90deg,transparent,var(--wire),transparent);
+  animation:scan 3.4s linear infinite;
+}
+.serve-card:nth-child(2)::before{animation-delay:1.7s}
+@keyframes scan{to{left:110%}}
+@media (prefers-reduced-motion: reduce){.serve-card::before{animation:none;left:0;width:100%;opacity:.5}}
+.serve-card:hover{border-color:rgba(47,230,160,.35);transform:translateY(-4px);box-shadow:0 24px 48px -24px rgba(0,0,0,.7), 0 0 40px -12px var(--glow)}
+.serve-tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--wire);margin-bottom:18px}
+.serve-card h3{font-family:var(--serif);font-weight:500;font-size:1.65rem;margin-bottom:16px}
+.serve-card p{color:var(--muted);font-size:.98rem;margin-bottom:14px}
+.serve-card p:last-of-type{color:var(--paper)}
+.serve-stats{display:flex;gap:40px;border-top:1px solid var(--rule-soft);margin-top:24px;padding-top:22px}
+.stat-val{font-family:var(--serif);font-size:1.7rem;font-weight:500;color:var(--wire)}
+.stat-val.plain{color:var(--paper)}
+.stat-label{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+/* ---- Solutions ---- */
+.sol-layout{display:grid;grid-template-columns:340px 1fr;gap:64px;margin-top:60px}
+.sol-tabs{display:flex;flex-direction:column;border-top:1px solid var(--rule-soft)}
+.sol-tab{
+  display:flex;align-items:baseline;gap:18px;text-align:left;
+  padding:17px 6px;border-bottom:1px solid var(--rule-soft);
+  color:#5F6C7C;transition:color .2s,padding-left .25s;position:relative;overflow:hidden;
+}
+.sol-tab-num{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em}
+.sol-tab-name{font-family:var(--serif);font-size:1.18rem;font-weight:400}
+.sol-tab:hover{color:var(--paper)}
+.sol-tab.active{color:var(--paper);padding-left:16px}
+.sol-tab.active::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;background:var(--wire);box-shadow:0 0 12px var(--glow)}
+.sol-tab .prog{ /* autoplay progress */
+  position:absolute;left:0;bottom:-1px;height:1px;width:100%;
+  background:var(--wire);transform:scaleX(0);transform-origin:left;opacity:.7;
+}
+.sol-tab.active .prog{animation:prog var(--autoplay,6s) linear forwards}
+.sol-tabs.paused .sol-tab .prog{animation:none;transform:scaleX(0)}
+@keyframes prog{to{transform:scaleX(1)}}
+@media (prefers-reduced-motion: reduce){.sol-tab .prog{display:none}}
+.sol-panel{display:none}
+.sol-panel.active{display:block;animation:panelIn .45s ease}
+@keyframes panelIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.sol-panel.active{animation:none}}
+.sol-no{font-family:var(--mono);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--wire);margin-bottom:14px}
+.sol-panel h3{font-family:var(--serif);font-weight:500;font-size:2rem;margin-bottom:16px}
+.sol-panel-desc{color:var(--muted);max-width:36em;font-size:1.02rem}
+.sol-ai{
+  display:flex;gap:14px;align-items:flex-start;
+  background:rgba(47,230,160,.06);border:1px solid rgba(47,230,160,.28);border-radius:3px;
+  padding:16px 18px;margin:24px 0;
+}
+.sol-ai-icon{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:#05231A;background:var(--wire);padding:3px 7px;border-radius:2px;flex:none;margin-top:2px;box-shadow:0 0 14px var(--glow)}
+.sol-ai p{color:var(--paper);opacity:.85;font-size:.92rem}
+.outcome-list li{position:relative;padding:11px 0 11px 26px;color:var(--muted);border-bottom:1px solid var(--rule-soft);font-size:.95rem;transition:color .2s,padding-left .2s}
+.outcome-list li:hover{color:var(--paper);padding-left:32px}
+.outcome-list li::before{content:"—";position:absolute;left:0;color:var(--wire)}
+.sol-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+
+/* ---- Statement band ---- */
+.statement{
+  position:relative;padding:120px 0;text-align:center;overflow:hidden;
+  background:
+    radial-gradient(60% 120% at 50% 120%, rgba(47,230,160,.16), transparent 70%),
+    var(--bg-2);
+  border-top:1px solid var(--rule-soft);border-bottom:1px solid var(--rule-soft);
+}
+.statement h2{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.9rem,4.4vw,3.3rem);line-height:1.15;letter-spacing:-.015em;
+  max-width:20em;margin:0 auto 40px;
+}
+.statement em{color:var(--wire);text-shadow:0 0 34px var(--glow)}
+#stmtCanvas{position:absolute;inset:auto 0 0 0;height:120px;width:100%;opacity:.5;pointer-events:none}
+
+/* ---- Process ---- */
+.process-list{margin-top:56px;border-top:1px solid var(--rule-soft);counter-reset:step}
+.step{
+  display:grid;grid-template-columns:90px 300px 1fr;gap:32px;align-items:baseline;
+  padding:30px 0;border-bottom:1px solid var(--rule-soft);position:relative;
+  transition:background .25s;
+}
+.step:hover{background:rgba(47,230,160,.03)}
+.step::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:1px;
+  background:linear-gradient(180deg,var(--wire),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.step:hover::before{opacity:1}
+.step-num{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;color:var(--wire)}
+.step-title{font-family:var(--serif);font-size:1.45rem;font-weight:500}
+.step-body{color:var(--muted);font-size:.98rem;max-width:36em}
+
+/* ---- Why Fortify ---- */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--rule-soft);border-left:1px solid var(--rule-soft)}
+.why-item{padding:36px 32px;border-right:1px solid var(--rule-soft);border-bottom:1px solid var(--rule-soft);transition:background .25s;position:relative;overflow:hidden}
+.why-item:hover{background:rgba(47,230,160,.04)}
+.why-val{font-family:var(--serif);font-size:2.7rem;line-height:1;color:var(--wire);text-shadow:0 0 24px rgba(47,230,160,.15)}
+.why-lbl{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;margin:12px 0}
+.why-item p{color:var(--muted);font-size:.92rem}
+
+/* ---- CTA ---- */
+.cta-section{position:relative;padding:130px 0;text-align:center;overflow:hidden}
+#ctaCanvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55;pointer-events:none}
+.cta-section .container{position:relative;z-index:2}
+.cta-section .eyebrow{justify-content:center}
+.cta-section .eyebrow::before{display:none}
+.cta-section h2{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.1;max-width:18em;margin:0 auto;
+}
+.cta-section p{color:var(--muted);max-width:36em;margin:22px auto 0}
+.cta-actions{display:flex;gap:14px;justify-content:center;margin-top:40px;flex-wrap:wrap}
+
+/* ---- Footer ---- */
+.footer{background:#050A12;color:var(--muted);padding:70px 0 36px;border-top:1px solid var(--rule-soft)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.f-logo{font-family:var(--serif);font-size:1.5rem;color:var(--paper)}
+.f-tag{font-family:var(--mono);font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--wire);margin-top:6px}
+.f-desc{font-size:.88rem;margin-top:18px;max-width:26em}
+.footer h4{font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:#54606F;margin-bottom:18px}
+.footer li a{display:block;padding:5px 0;font-size:.9rem;transition:color .2s}
+.footer li a:hover{color:var(--wire)}
+.footer-bottom{
+  border-top:1px solid var(--rule-soft);margin-top:56px;padding-top:24px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
+}
+
+/* ---- Responsive ---- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:48px}
+  .sol-layout{grid-template-columns:1fr;gap:36px}
+  .sol-tabs{flex-direction:row;overflow-x:auto;border-top:none;gap:6px;padding-bottom:6px}
+  .sol-tab{border:1px solid var(--rule-soft);border-radius:2px;padding:10px 16px;white-space:nowrap;flex:none}
+  .sol-tab.active{padding-left:16px;background:rgba(47,230,160,.08)}
+  .sol-tab.active::before{display:none}
+  .sol-tab-name{font-size:1rem}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .step{grid-template-columns:70px 1fr}
+  .step-body{grid-column:2}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .section{padding:76px 0}
+  .serve-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:36px}
+  .hero{padding-top:calc(var(--nav-h) + 48px)}
+}
+</style>
 </head>
 <body>
 
-<div id="nav-mount"></div>
+<!-- ===== NAV ===== -->
+<nav class="nav" id="mainNav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand" aria-label="Fortify home">
+      <span class="nav-logo">Fortify</span>
+      <span class="nav-tagline">Experience Certainty</span>
+    </a>
+    <div class="nav-links">
+      <a href="/solutions/">Solutions</a>
+      <a href="/case-studies/">Case Studies</a>
+      <a href="/insights/">Insights</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html" class="nav-cta">Book a Call</a>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <a href="/solutions/">Solutions</a>
+  <a href="/case-studies/">Case Studies</a>
+  <a href="/insights/">Insights</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html" class="drawer-cta">Book a Call</a>
+</div>
 
 <!-- ===== HERO ===== -->
 <header class="hero" role="banner">
-  <div class="container hero-content">
-    <div class="ai-badge">
-      <span class="ai-badge-dot"></span>
-      AI-Native Organisation
+  <canvas id="wireCanvas" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">AI-Native Data Intelligence · Live</div>
+        <h1>Grow revenue.<br>Reduce churn.<br><em>Powered by AI.</em><span class="cursor" aria-hidden="true"></span></h1>
+        <p class="hero-sub">
+          Fortify deploys <strong>AI-powered intelligence systems</strong> that help SaaS companies and e-commerce brands make faster, clearer decisions — and outgrow competitors still running on gut feel.
+        </p>
+        <div class="hero-actions">
+          <a href="/contact.html" class="btn btn-wire btn-lg btn-pulse">Book a Discovery Call</a>
+          <a href="/solutions/" class="btn btn-ghost btn-lg">See Our Solutions</a>
+        </div>
+      </div>
+
+      <!-- The strange-attractor card -->
+      <figure class="signal" aria-label="Live animation: a chaotic stream of raw numbers passes through a model and emerges as a single clean insight curve">
+        <div class="signal-head">
+          <span class="signal-title">Raw numbers → insight</span>
+          <span class="signal-live"><i></i>Transforming</span>
+        </div>
+        <canvas id="liveChart" aria-hidden="true"></canvas>
+        <div class="signal-legend">
+          <span><span class="k-lag">···</span> raw data <span style="color:#54606F">·</span> <span class="k-ai">━</span> insight</span>
+          <span id="stateVec" class="k-lag">in 0 · out 0</span>
+        </div>
+        <div class="feed" id="feed" aria-live="off"></div>
+        <div class="feed-note">Numbers in · insight out — rendered live · illustrative</div>
+      </figure>
     </div>
-    <h1>
-      Grow Revenue.<br>
-      Reduce Churn.<br>
-      <em>Powered by AI.</em>
-    </h1>
-    <p class="hero-sub">
-      Fortify deploys <strong>AI-powered intelligence systems</strong> that help SaaS companies and e-commerce brands make faster, clearer decisions — and outgrow competitors still running on gut feel.
-    </p>
-    <div class="hero-actions">
-      <a href="/contact.html" class="btn btn-primary btn-lg">Book a Discovery Call</a>
-      <a href="/solutions/" class="btn btn-outline-dim">See Our Solutions</a>
-    </div>
-    <div class="hero-chips">
-      <span class="chip-label">Built for</span>
-      <span class="chip">SaaS · $5M–$50M ARR</span>
-      <span class="chip">E-commerce · $10M–$100M GMV</span>
-      <span class="chip">CMOs &amp; Growth Leads</span>
-      <span class="chip">AI-Ready Teams</span>
+
+    <div class="hero-strip">
+      <span class="lbl">Built for</span>
+      <span class="itm"><span>◆</span>SaaS · $5M–$50M ARR</span>
+      <span class="itm"><span>◆</span>E-commerce · $10M–$100M GMV</span>
+      <span class="itm"><span>◆</span>CMOs &amp; Growth Leads</span>
+      <span class="itm"><span>◆</span>AI-Ready Teams</span>
     </div>
   </div>
 </header>
@@ -64,60 +473,50 @@
 <!-- ===== TICKER ===== -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-item"><strong>AI-Powered Customer Profiling</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>Predictive Churn Analysis</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>AI Business Dashboards</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>MTU Growth Intelligence</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>Campaign AI Optimisation</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>Competitor Intelligence</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>AI-Powered Customer Profiling</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>Predictive Churn Analysis</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>AI Business Dashboards</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>MTU Growth Intelligence</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>Campaign AI Optimisation</strong></span>
-    <span class="ticker-item accent">·</span>
-    <span class="ticker-item"><strong>Competitor Intelligence</strong></span>
-    <span class="ticker-item accent">·</span>
+    <span class="ticker-item">AI-Powered Customer Profiling</span>
+    <span class="ticker-item">Predictive Churn Analysis</span>
+    <span class="ticker-item">AI Business Dashboards</span>
+    <span class="ticker-item">MTU Growth Intelligence</span>
+    <span class="ticker-item">Campaign AI Optimisation</span>
+    <span class="ticker-item">Competitor Intelligence</span>
+    <span class="ticker-item">AI-Powered Customer Profiling</span>
+    <span class="ticker-item">Predictive Churn Analysis</span>
+    <span class="ticker-item">AI Business Dashboards</span>
+    <span class="ticker-item">MTU Growth Intelligence</span>
+    <span class="ticker-item">Campaign AI Optimisation</span>
+    <span class="ticker-item">Competitor Intelligence</span>
   </div>
 </div>
 
 <!-- ===== WHO WE SERVE ===== -->
 <section class="section" aria-labelledby="serve-h">
   <div class="container">
-    <div class="label">Who We Serve</div>
-    <h2 id="serve-h">Companies at the growth inflection point.</h2>
-    <p class="section-sub">Large enough to have data. Agile enough to act on it. At the exact stage where AI-powered intelligence pays back most.</p>
+    <div class="rv">
+      <div class="eyebrow">Who We Serve</div>
+      <h2 class="h-display" id="serve-h"><span class="wire-u">Companies at the growth inflection point.</span></h2>
+      <p class="section-sub">Large enough to have data. Agile enough to act on it. At the exact stage where AI-powered intelligence pays back most.</p>
+    </div>
     <div class="serve-grid">
-      <div class="serve-card">
+      <div class="serve-card rv d1">
         <div class="serve-tag">Sector 01</div>
         <h3>SaaS &amp; Tech Companies</h3>
         <p>Growing revenue but churn is compounding quietly. Different teams trust different numbers. CAC is rising and attribution is broken. Your AI isn't working because your data foundation isn't ready.</p>
         <p>We fix the foundation and deploy AI models that surface what your data is hiding.</p>
         <div class="serve-stats">
-          <div><div class="stat-val accent">$5M</div><div class="stat-label">Min ARR</div></div>
-          <div><div class="stat-val accent">$50M</div><div class="stat-label">Max ARR</div></div>
-          <div><div class="stat-val">100+</div><div class="stat-label">Employees</div></div>
+          <div><div class="stat-val">$5M</div><div class="stat-label">Min ARR</div></div>
+          <div><div class="stat-val">$50M</div><div class="stat-label">Max ARR</div></div>
+          <div><div class="stat-val plain">100+</div><div class="stat-label">Employees</div></div>
         </div>
       </div>
-      <div class="serve-card">
+      <div class="serve-card rv d2">
         <div class="serve-tag">Sector 02</div>
         <h3>E-commerce &amp; Retail Brands</h3>
         <p>Data scattered across Shopify, Meta, Google, and three logistics platforms. Manual Excel reports consuming your team's week. No unified view of customer behaviour across the funnel.</p>
         <p>We unify it, model it with AI, and turn it into a competitive advantage rivals can't copy.</p>
         <div class="serve-stats">
-          <div><div class="stat-val accent">$10M</div><div class="stat-label">Min GMV</div></div>
-          <div><div class="stat-val accent">$100M</div><div class="stat-label">Max GMV</div></div>
-          <div><div class="stat-val">D2C</div><div class="stat-label">Focus</div></div>
+          <div><div class="stat-val">$10M</div><div class="stat-label">Min GMV</div></div>
+          <div><div class="stat-val">$100M</div><div class="stat-label">Max GMV</div></div>
+          <div><div class="stat-val plain">D2C</div><div class="stat-label">Focus</div></div>
         </div>
       </div>
     </div>
@@ -125,158 +524,124 @@
 </section>
 
 <!-- ===== SOLUTIONS ===== -->
-<section class="section section-dark" id="solutions" aria-labelledby="sol-h">
+<section class="section section-tint" id="solutions" aria-labelledby="sol-h">
   <div class="container">
-    <div class="label">Our Solutions</div>
-    <h2 id="sol-h">Six AI-powered intelligence systems.</h2>
-    <p class="section-sub">Each solution combines senior practitioner expertise with AI models — built to move a specific metric that matters to your growth.</p>
+    <div class="rv">
+      <div class="eyebrow">Our Solutions</div>
+      <h2 class="h-display" id="sol-h"><span class="wire-u">Six AI-powered intelligence systems.</span></h2>
+      <p class="section-sub">Each solution combines senior practitioner expertise with AI models — built to move a specific metric that matters to your growth.</p>
+    </div>
 
-    <div class="sol-layout" role="tablist">
-      <div class="sol-tabs">
-        <button class="sol-tab active" role="tab" aria-selected="true" aria-controls="sp-1" onclick="switchTab(0)">
-          <span class="sol-tab-num">01</span>
-          <span class="sol-tab-name">Customer Profiling</span>
-        </button>
-        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-2" onclick="switchTab(1)">
-          <span class="sol-tab-num">02</span>
-          <span class="sol-tab-name">Churn Analysis</span>
-        </button>
-        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-3" onclick="switchTab(2)">
-          <span class="sol-tab-num">03</span>
-          <span class="sol-tab-name">Business Dashboards</span>
-        </button>
-        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-4" onclick="switchTab(3)">
-          <span class="sol-tab-num">04</span>
-          <span class="sol-tab-name">MTU Growth</span>
-        </button>
-        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-5" onclick="switchTab(4)">
-          <span class="sol-tab-num">05</span>
-          <span class="sol-tab-name">Campaign Optimisation</span>
-        </button>
-        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-6" onclick="switchTab(5)">
-          <span class="sol-tab-num">06</span>
-          <span class="sol-tab-name">Competitor Analysis</span>
-        </button>
+    <div class="sol-layout rv">
+      <div class="sol-tabs" id="solTabs" role="tablist" aria-label="Solutions">
+        <button class="sol-tab active" role="tab" aria-selected="true" aria-controls="sp-1"><span class="sol-tab-num">01</span><span class="sol-tab-name">Customer Profiling</span><span class="prog"></span></button>
+        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-2"><span class="sol-tab-num">02</span><span class="sol-tab-name">Churn Analysis</span><span class="prog"></span></button>
+        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-3"><span class="sol-tab-num">03</span><span class="sol-tab-name">Business Dashboards</span><span class="prog"></span></button>
+        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-4"><span class="sol-tab-num">04</span><span class="sol-tab-name">MTU Growth</span><span class="prog"></span></button>
+        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-5"><span class="sol-tab-num">05</span><span class="sol-tab-name">Campaign Optimisation</span><span class="prog"></span></button>
+        <button class="sol-tab" role="tab" aria-selected="false" aria-controls="sp-6"><span class="sol-tab-num">06</span><span class="sol-tab-name">Competitor Analysis</span><span class="prog"></span></button>
       </div>
 
       <div class="sol-panel-wrap">
         <div class="sol-panel active" id="sp-1" role="tabpanel">
-          <div class="label">Solution 01</div>
+          <div class="sol-no">Solution 01</div>
           <h3>Customer Profiling</h3>
           <p class="sol-panel-desc">AI models that build a real-time, precise picture of your customer base — updated continuously, not quarterly. Know who your most valuable customers are, what drives their behaviour, and who to acquire more of.</p>
-          <div class="sol-panel-ai">
-            <span class="sol-panel-ai-icon">AI</span>
-            <p>Machine learning segments that update automatically as customer behaviour evolves — not static cohorts built in a spreadsheet once a year.</p>
-          </div>
+          <div class="sol-ai"><span class="sol-ai-icon">AI</span><p>Machine learning segments that update automatically as customer behaviour evolves — not static cohorts built in a spreadsheet once a year.</p></div>
           <ul class="outcome-list">
             <li>AI-driven RFM segmentation with predictive lifetime value scoring</li>
             <li>Behavioural clustering that reveals untapped high-value segments</li>
             <li>Unified 360° customer view across all touchpoints</li>
             <li>Real-time persona updates as your customer base shifts</li>
           </ul>
-          <div class="mt-24">
-            <a href="/solutions/customer-profiling.html" class="btn btn-outline-dim btn-sm">Learn More</a>
-            <a href="/contact.html" class="btn btn-primary btn-sm" style="margin-left:10px">Discuss This</a>
+          <div class="sol-actions">
+            <a href="/solutions/customer-profiling.html" class="btn btn-ghost btn-sm">Learn More</a>
+            <a href="/contact.html" class="btn btn-wire btn-sm">Discuss This</a>
           </div>
         </div>
 
         <div class="sol-panel" id="sp-2" role="tabpanel">
-          <div class="label">Solution 02</div>
+          <div class="sol-no">Solution 02</div>
           <h3>Churn Analysis</h3>
           <p class="sol-panel-desc">Predictive AI models that flag at-risk customers 60–90 days before they cancel — giving your team the time and context to intervene. Stop treating churn as a lagging indicator.</p>
-          <div class="sol-panel-ai">
-            <span class="sol-panel-ai-icon">AI</span>
-            <p>Predictive churn scoring runs continuously on your live customer base, surfacing early warning signals your team would never spot manually.</p>
-          </div>
+          <div class="sol-ai"><span class="sol-ai-icon">AI</span><p>Predictive churn scoring runs continuously on your live customer base, surfacing early warning signals your team would never spot manually.</p></div>
           <ul class="outcome-list">
             <li>Predictive churn model deployed on your live customer data</li>
             <li>Root-cause AI analysis — why customers are actually leaving</li>
             <li>Automated early-warning alerts for customer success teams</li>
             <li>Retention playbooks triggered by real behavioural signals</li>
           </ul>
-          <div class="mt-24">
-            <a href="/solutions/churn-analysis.html" class="btn btn-outline-dim btn-sm">Learn More</a>
-            <a href="/contact.html" class="btn btn-primary btn-sm" style="margin-left:10px">Discuss This</a>
+          <div class="sol-actions">
+            <a href="/solutions/churn-analysis.html" class="btn btn-ghost btn-sm">Learn More</a>
+            <a href="/contact.html" class="btn btn-wire btn-sm">Discuss This</a>
           </div>
         </div>
 
         <div class="sol-panel" id="sp-3" role="tabpanel">
-          <div class="label">Solution 03</div>
+          <div class="sol-no">Solution 03</div>
           <h3>Business Dashboards</h3>
           <p class="sol-panel-desc">AI-narrated dashboards that don't just show what happened — they explain why, and flag what needs attention. One authoritative view of the business, built for daily leadership use.</p>
-          <div class="sol-panel-ai">
-            <span class="sol-panel-ai-icon">AI</span>
-            <p>AI-generated narrative summaries explain the data in plain language — so your leadership team reads the insight, not the chart.</p>
-          </div>
+          <div class="sol-ai"><span class="sol-ai-icon">AI</span><p>AI-generated narrative summaries explain the data in plain language — so your leadership team reads the insight, not the chart.</p></div>
           <ul class="outcome-list">
             <li>Single source of truth across revenue, operations, and marketing</li>
             <li>AI anomaly detection that flags unusual patterns automatically</li>
             <li>Built in Power BI, Tableau, Looker Studio, or Metabase</li>
             <li>Designed for daily use — not quarterly reviews nobody reads</li>
           </ul>
-          <div class="mt-24">
-            <a href="/solutions/business-dashboards.html" class="btn btn-outline-dim btn-sm">Learn More</a>
-            <a href="/contact.html" class="btn btn-primary btn-sm" style="margin-left:10px">Discuss This</a>
+          <div class="sol-actions">
+            <a href="/solutions/business-dashboards.html" class="btn btn-ghost btn-sm">Learn More</a>
+            <a href="/contact.html" class="btn btn-wire btn-sm">Discuss This</a>
           </div>
         </div>
 
         <div class="sol-panel" id="sp-4" role="tabpanel">
-          <div class="label">Solution 04</div>
+          <div class="sol-no">Solution 04</div>
           <h3>MTU Growth</h3>
           <p class="sol-panel-desc">AI-powered Acquisition → Retention → Reactivation framework built around Monthly Transacting Users — the one metric that tells you whether your business is truly growing.</p>
-          <div class="sol-panel-ai">
-            <span class="sol-panel-ai-icon">AI</span>
-            <p>AI forecasting models predict MTU trajectory under different growth scenarios — so you plan ahead, not just report backwards.</p>
-          </div>
+          <div class="sol-ai"><span class="sol-ai-icon">AI</span><p>AI forecasting models predict MTU trajectory under different growth scenarios — so you plan ahead, not just report backwards.</p></div>
           <ul class="outcome-list">
             <li>Cohort-level acquisition analysis by channel and campaign</li>
             <li>AI-identified retention drop-off points in the customer journey</li>
             <li>Win-back model to reactivate dormant high-value customers</li>
             <li>MTU forecasting for growth planning and scenario modelling</li>
           </ul>
-          <div class="mt-24">
-            <a href="/solutions/mtu-growth.html" class="btn btn-outline-dim btn-sm">Learn More</a>
-            <a href="/contact.html" class="btn btn-primary btn-sm" style="margin-left:10px">Discuss This</a>
+          <div class="sol-actions">
+            <a href="/solutions/mtu-growth.html" class="btn btn-ghost btn-sm">Learn More</a>
+            <a href="/contact.html" class="btn btn-wire btn-sm">Discuss This</a>
           </div>
         </div>
 
         <div class="sol-panel" id="sp-5" role="tabpanel">
-          <div class="label">Solution 05</div>
+          <div class="sol-no">Solution 05</div>
           <h3>Marketing Campaign Optimisation</h3>
           <p class="sol-panel-desc">AI attribution that runs continuously across every channel — not a one-time model built in a spreadsheet. Know exactly which spend drives which outcome, and reallocate budget in near real-time.</p>
-          <div class="sol-panel-ai">
-            <span class="sol-panel-ai-icon">AI</span>
-            <p>Continuous incrementality testing powered by AI — validates what is actually driving growth versus what just looks like it is.</p>
-          </div>
+          <div class="sol-ai"><span class="sol-ai-icon">AI</span><p>Continuous incrementality testing powered by AI — validates what is actually driving growth versus what just looks like it is.</p></div>
           <ul class="outcome-list">
             <li>Multi-touch AI attribution across paid, owned, and earned channels</li>
             <li>Automated incrementality testing to validate true performance</li>
             <li>Spend reallocation model with ROI impact forecasting</li>
             <li>Campaign performance benchmarking against sector standards</li>
           </ul>
-          <div class="mt-24">
-            <a href="/solutions/campaign-optimisation.html" class="btn btn-outline-dim btn-sm">Learn More</a>
-            <a href="/contact.html" class="btn btn-primary btn-sm" style="margin-left:10px">Discuss This</a>
+          <div class="sol-actions">
+            <a href="/solutions/campaign-optimisation.html" class="btn btn-ghost btn-sm">Learn More</a>
+            <a href="/contact.html" class="btn btn-wire btn-sm">Discuss This</a>
           </div>
         </div>
 
         <div class="sol-panel" id="sp-6" role="tabpanel">
-          <div class="label">Solution 06</div>
+          <div class="sol-no">Solution 06</div>
           <h3>Competitor Analysis</h3>
           <p class="sol-panel-desc">AI monitoring that tracks competitor moves in real time — pricing changes, messaging shifts, share-of-voice movements — so you're always one step ahead, not six months behind.</p>
-          <div class="sol-panel-ai">
-            <span class="sol-panel-ai-icon">AI</span>
-            <p>AI-powered competitive monitoring runs continuously — no more one-time research that's outdated the moment it's delivered.</p>
-          </div>
+          <div class="sol-ai"><span class="sol-ai-icon">AI</span><p>AI-powered competitive monitoring runs continuously — no more one-time research that's outdated the moment it's delivered.</p></div>
           <ul class="outcome-list">
             <li>Pricing, positioning, and product gap analysis</li>
             <li>AI-driven share-of-voice and search intent mapping</li>
             <li>Competitive whitespace identification and opportunity sizing</li>
             <li>Real-time monitoring alerts for significant competitor moves</li>
           </ul>
-          <div class="mt-24">
-            <a href="/solutions/competitor-analysis.html" class="btn btn-outline-dim btn-sm">Learn More</a>
-            <a href="/contact.html" class="btn btn-primary btn-sm" style="margin-left:10px">Discuss This</a>
+          <div class="sol-actions">
+            <a href="/solutions/competitor-analysis.html" class="btn btn-ghost btn-sm">Learn More</a>
+            <a href="/contact.html" class="btn btn-wire btn-sm">Discuss This</a>
           </div>
         </div>
       </div>
@@ -286,95 +651,449 @@
 
 <!-- ===== STATEMENT ===== -->
 <div class="statement">
-  <div class="container">
+  <canvas id="stmtCanvas" aria-hidden="true"></canvas>
+  <div class="container rv">
     <h2>Data is not the advantage.<br><em>AI that knows what to do with it is.</em></h2>
-    <a href="/contact.html" class="btn btn-outline-dark btn-lg">Start a Conversation</a>
+    <a href="/contact.html" class="btn btn-ghost btn-lg">Start a Conversation</a>
   </div>
 </div>
 
 <!-- ===== PROCESS ===== -->
 <section class="section" aria-labelledby="process-h">
   <div class="container">
-    <div class="label">Our Process</div>
-    <h2 id="process-h">How we work</h2>
-    <p class="section-sub">Every engagement follows the same AI-augmented process. Decisions first. Data second. AI throughout.</p>
-    <div class="process-grid">
-      <div class="step"><div class="step-num">01</div><div class="step-title">Discovery &amp; Diagnostic</div><p class="step-body">We audit your data infrastructure, tooling, and decision-making process — using AI to map where intelligence is failing fastest.</p></div>
-      <div class="step"><div class="step-num">02</div><div class="step-title">Define Decisions</div><p class="step-body">Before touching data, we agree on decisions that need to be made. Metrics serve decisions — not dashboards.</p></div>
-      <div class="step"><div class="step-num">03</div><div class="step-title">Unify &amp; Model</div><p class="step-body">All sources unified into one reliable model. AI runs continuously on top — surfacing signals your team would never find manually.</p></div>
-      <div class="step"><div class="step-num">04</div><div class="step-title">Build &amp; Deploy</div><p class="step-body">We build the solution and embed it into your workflow. AI models are deployed into production — not handed over as a notebook.</p></div>
-      <div class="step"><div class="step-num">05</div><div class="step-title">Enable &amp; Handover</div><p class="step-body">Full documentation, training, and independence from day one. Your team owns and operates everything after handover.</p></div>
+    <div class="rv">
+      <div class="eyebrow">Our Process</div>
+      <h2 class="h-display" id="process-h"><span class="wire-u">How we work</span></h2>
+      <p class="section-sub">Every engagement follows the same AI-augmented process. Decisions first. Data second. AI throughout.</p>
+    </div>
+    <div class="process-list">
+      <div class="step rv"><div class="step-num">Step 01</div><div class="step-title">Discovery &amp; Diagnostic</div><p class="step-body">We audit your data infrastructure, tooling, and decision-making process — using AI to map where intelligence is failing fastest.</p></div>
+      <div class="step rv"><div class="step-num">Step 02</div><div class="step-title">Define Decisions</div><p class="step-body">Before touching data, we agree on decisions that need to be made. Metrics serve decisions — not dashboards.</p></div>
+      <div class="step rv"><div class="step-num">Step 03</div><div class="step-title">Unify &amp; Model</div><p class="step-body">All sources unified into one reliable model. AI runs continuously on top — surfacing signals your team would never find manually.</p></div>
+      <div class="step rv"><div class="step-num">Step 04</div><div class="step-title">Build &amp; Deploy</div><p class="step-body">We build the solution and embed it into your workflow. AI models are deployed into production — not handed over as a notebook.</p></div>
+      <div class="step rv"><div class="step-num">Step 05</div><div class="step-title">Enable &amp; Handover</div><p class="step-body">Full documentation, training, and independence from day one. Your team owns and operates everything after handover.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ===== WHY FORTIFY ===== -->
-<section class="section section-dark" aria-labelledby="why-h">
+<section class="section section-tint" aria-labelledby="why-h">
   <div class="container">
-    <div class="label">Why Fortify</div>
-    <h2 id="why-h">AI-native from day one.</h2>
-    <p class="section-sub">Not an analytics firm that added AI later. Built from scratch with AI at the core of every process, every solution, every delivery.</p>
-    <div class="why-grid">
-      <div class="why-item">
-        <div class="why-val accent">AI</div>
-        <div class="why-lbl">Native Organisation</div>
-        <p>Built from day one using AI tools — not retrofitted. Every solution, process, and delivery method is AI-augmented by design.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-val">6</div>
-        <div class="why-lbl">Intelligence Systems</div>
-        <p>Six proven AI-powered frameworks built to move specific business metrics — not generic analytics services.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-val">2</div>
-        <div class="why-lbl">Sectors. Deep expertise.</div>
-        <p>SaaS and e-commerce only. We know the benchmarks, failure modes, and fastest path to AI-driven insight in your sector.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-val">100%</div>
-        <div class="why-lbl">Senior-led Delivery</div>
-        <p>AI handles the heavy lifting. Senior practitioners handle the judgement. No junior analysts learning on your budget.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-val">0</div>
-        <div class="why-lbl">Dependency After Handover</div>
-        <p>We build for independence. Full documentation and training so your team runs the AI models autonomously.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-val">30</div>
-        <div class="why-lbl">Minute Discovery Call</div>
-        <p>A working session — not a pitch. You leave with clarity on where your data is failing your growth, AI or otherwise.</p>
-      </div>
+    <div class="rv">
+      <div class="eyebrow">Why Fortify</div>
+      <h2 class="h-display" id="why-h"><span class="wire-u">AI-native from day one.</span></h2>
+      <p class="section-sub">Not an analytics firm that added AI later. Built from scratch with AI at the core of every process, every solution, every delivery.</p>
+    </div>
+    <div class="why-grid rv">
+      <div class="why-item"><div class="why-val">AI</div><div class="why-lbl">Native Organisation</div><p>Built from day one using AI tools — not retrofitted. Every solution, process, and delivery method is AI-augmented by design.</p></div>
+      <div class="why-item"><div class="why-val" data-count="6">0</div><div class="why-lbl">Intelligence Systems</div><p>Six proven AI-powered frameworks built to move specific business metrics — not generic analytics services.</p></div>
+      <div class="why-item"><div class="why-val" data-count="2">0</div><div class="why-lbl">Sectors. Deep Expertise.</div><p>SaaS and e-commerce only. We know the benchmarks, failure modes, and fastest path to AI-driven insight in your sector.</p></div>
+      <div class="why-item"><div class="why-val" data-count="100" data-suffix="%">0%</div><div class="why-lbl">Senior-led Delivery</div><p>AI handles the heavy lifting. Senior practitioners handle the judgement. No junior analysts learning on your budget.</p></div>
+      <div class="why-item"><div class="why-val" data-count="0">0</div><div class="why-lbl">Dependency After Handover</div><p>We build for independence. Full documentation and training so your team runs the AI models autonomously.</p></div>
+      <div class="why-item"><div class="why-val" data-count="30">0</div><div class="why-lbl">Minute Discovery Call</div><p>A working session — not a pitch. You leave with clarity on where your data is failing your growth, AI or otherwise.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ===== CTA ===== -->
 <section class="cta-section" id="contact" aria-labelledby="cta-h">
-  <div class="container">
-    <div class="label">Get Started</div>
+  <canvas id="ctaCanvas" aria-hidden="true"></canvas>
+  <div class="container rv">
+    <div class="eyebrow">Get Started</div>
     <h2 id="cta-h">Your data already knows where growth is leaking.</h2>
     <p>Book a 30-minute discovery call. No pitch. No pressure. A working conversation about what AI can surface from your data — right now.</p>
     <div class="cta-actions">
-      <a href="/contact.html" class="btn btn-primary btn-lg">Book a Discovery Call</a>
-      <a href="/solutions/" class="btn btn-outline-dim">Explore Solutions</a>
+      <a href="/contact.html" class="btn btn-wire btn-lg btn-pulse">Book a Discovery Call</a>
+      <a href="/solutions/" class="btn btn-ghost btn-lg">Explore Solutions</a>
     </div>
   </div>
 </section>
 
-<div id="footer-mount"></div>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-logo">Fortify</div>
+        <div class="f-tag">Experience Certainty</div>
+        <p class="f-desc">AI-native data intelligence for mid-market SaaS and e-commerce growth teams. Senior-led. Built for independence.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/solutions/">Solutions</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
+          <li><a href="/insights/">Insights</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="/contact.html">Book a Discovery Call</a></li>
+          <li><a href="mailto:contact@fortify-technologies.com">contact@fortify-technologies.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fortify Technologies</span>
+      <span>AI-Native · Senior-Led · Zero Dependency</span>
+    </div>
+  </div>
+</footer>
 
-<script src="/assets/js/nav.js"></script>
-<script src="/assets/js/footer.js"></script>
-<script src="/assets/js/main.js"></script>
 <script>
-function switchTab(i) {
-  document.querySelectorAll('.sol-tab').forEach((t,j) => {
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const WIRE = '#2FE6A0';
+
+/* ---------- nav ---------- */
+const nav = document.getElementById('mainNav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 8), {passive:true});
+const burger = document.getElementById('navHamburger');
+const drawer = document.getElementById('navDrawer');
+burger.addEventListener('click', () => {
+  const open = drawer.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+});
+
+/* ---------- scroll reveal ---------- */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold:.12});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+/* ---------- count-up stats ---------- */
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  cio.unobserve(e.target);
+  const el = e.target, target = +el.dataset.count, suf = el.dataset.suffix || '';
+  if (REDUCED){ el.textContent = target + suf; return; }
+  const t0 = performance.now(), dur = 1400;
+  (function tick(t){
+    const p = Math.min((t - t0) / dur, 1);
+    el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suf;
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
+}), {threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+/* ---------- solutions tabs + autoplay ---------- */
+const tabsWrap = document.getElementById('solTabs');
+const tabs = [...tabsWrap.querySelectorAll('.sol-tab')];
+const panels = [...document.querySelectorAll('.sol-panel')];
+let cur = 0, autoTimer = null;
+const AUTOPLAY_MS = 6000;
+document.documentElement.style.setProperty('--autoplay', AUTOPLAY_MS + 'ms');
+
+function show(i){
+  cur = i;
+  tabs.forEach((t,j) => {
     t.classList.toggle('active', i===j);
     t.setAttribute('aria-selected', i===j);
+    const p = t.querySelector('.prog');
+    p.style.animation = 'none'; void p.offsetWidth; p.style.animation = '';
   });
-  document.querySelectorAll('.sol-panel').forEach((p,j) => p.classList.toggle('active', i===j));
+  panels.forEach((p,j) => p.classList.toggle('active', i===j));
 }
+function startAuto(){
+  if (REDUCED) return;
+  stopAuto();
+  autoTimer = setInterval(() => show((cur + 1) % tabs.length), AUTOPLAY_MS);
+}
+function stopAuto(){ if (autoTimer){ clearInterval(autoTimer); autoTimer = null; } tabsWrap.classList.add('paused'); }
+tabs.forEach((t,i) => t.addEventListener('click', () => { show(i); stopAuto(); }));
+/* start autoplay only when section is on screen */
+new IntersectionObserver((es,obs) => es.forEach(e => {
+  if (e.isIntersecting){ startAuto(); obs.disconnect(); }
+}), {threshold:.3}).observe(tabsWrap);
+
+/* ---------- canvas helpers ---------- */
+function fitCanvas(cv){
+  const dpr = Math.min(devicePixelRatio || 1, 2);
+  const r = cv.getBoundingClientRect();
+  cv.width = r.width * dpr; cv.height = r.height * dpr;
+  const ctx = cv.getContext('2d');
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  return {ctx, w:r.width, h:r.height};
+}
+/* only animate canvases while visible */
+function whenVisible(el, cb){
+  let on = false, raf;
+  new IntersectionObserver(es => es.forEach(e => {
+    on = e.isIntersecting;
+    if (on && !raf) loop();
+  }), {threshold:0}).observe(el);
+  function loop(){
+    if (!on){ raf = null; return; }
+    cb();
+    raf = requestAnimationFrame(loop);
+  }
+}
+
+/* ---------- HERO: live-wire field ---------- */
+(function(){
+  const cv = document.getElementById('wireCanvas');
+  let {ctx,w,h} = fitCanvas(cv);
+  addEventListener('resize', () => ({ctx,w,h} = fitCanvas(cv)));
+  const wires = [
+    {y:.30, amp:26, sp:.9,  ph:0,   op:.16, lw:1.2},
+    {y:.48, amp:40, sp:.55, ph:2.1, op:.30, lw:1.6},
+    {y:.63, amp:22, sp:1.25,ph:4.2, op:.13, lw:1},
+    {y:.80, amp:34, sp:.72, ph:1.3, op:.22, lw:1.4},
+  ];
+  let t = 0;
+  function frame(){
+    t += .012;
+    ctx.clearRect(0,0,w,h);
+    for (const wr of wires){
+      ctx.beginPath();
+      for (let x = -10; x <= w + 10; x += 6){
+        const n = Math.sin(x*.006 + t*wr.sp + wr.ph)*wr.amp
+                + Math.sin(x*.017 - t*wr.sp*1.7 + wr.ph)*wr.amp*.35
+                + Math.sin(x*.041 + t*wr.sp*2.6)*wr.amp*.12;
+        const y = h*wr.y + n;
+        x === -10 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+      }
+      ctx.strokeStyle = `rgba(47,230,160,${wr.op})`;
+      ctx.lineWidth = wr.lw;
+      ctx.shadowColor = WIRE; ctx.shadowBlur = 12;
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+      /* travelling spark */
+      const sx = ((t*wr.sp*140 + wr.ph*300) % (w + 200)) - 100;
+      const sn = Math.sin(sx*.006 + t*wr.sp + wr.ph)*wr.amp
+               + Math.sin(sx*.017 - t*wr.sp*1.7 + wr.ph)*wr.amp*.35
+               + Math.sin(sx*.041 + t*wr.sp*2.6)*wr.amp*.12;
+      ctx.beginPath();
+      ctx.arc(sx, h*wr.y + sn, 2.2, 0, 7);
+      ctx.fillStyle = `rgba(124,245,200,${wr.op*3})`;
+      ctx.shadowColor = WIRE; ctx.shadowBlur = 16;
+      ctx.fill(); ctx.shadowBlur = 0;
+    }
+  }
+  if (REDUCED){ t = 3; frame(); } else whenVisible(cv, frame);
+})();
+
+/* ---------- SIGNAL CARD: numbers → insight ---------- */
+(function(){
+  const cv = document.getElementById('liveChart');
+  let {ctx,w,h} = fitCanvas(cv);
+  addEventListener('resize', () => ({ctx,w,h} = fitCanvas(cv)));
+  const vec = document.getElementById('stateVec');
+
+  const GATE = () => w * 0.46;              /* the model line */
+  let t = 0, dataIn = 0, insightsOut = 0;
+
+  /* the insight curve on the right half: u in [0,1] */
+  function curveY(u, tt){
+    return h * 0.78
+         - u * h * 0.42                      /* rising trend */
+         + Math.sin(u * 7 + tt * 1.4) * 5    /* alive, breathing */
+         + Math.sin(u * 17 - tt * 2.2) * 2;
+  }
+
+  /* ---- particles: raw numbers ---- */
+  const parts = [];
+  const CHARS = ['0','1','2','3','4','5','6','7','8','9','7.3','0.42','−1.8','3.14','12%','404','0.07','88','2.71','56K'];
+  function spawn(){
+    parts.push({
+      x: -14,
+      y: 10 + Math.random() * (h - 20),
+      vx: 0.9 + Math.random() * 1.4,
+      drift: (Math.random() - .5) * 0.7,
+      ch: CHARS[(Math.random() * CHARS.length) | 0],
+      size: 8 + Math.random() * 4,
+      wob: Math.random() * 6.28,
+      merged: false,
+    });
+    dataIn++;
+  }
+
+  /* ---- insight tags ---- */
+  const TAGS = ['churn risk ↓', 'LTV ↑ 12%', 'retention +9%', 'hidden segment', 'CAC ↓', 'MTU ↑'];
+  const tags = [];
+  let lastTag = 0;
+  function spawnTag(){
+    const u = 0.55 + Math.random() * 0.4;
+    tags.push({ u, txt: TAGS[(Math.random() * TAGS.length) | 0], life: 0, max: 190 });
+    insightsOut++;
+  }
+
+  function frame(){
+    t += 0.016;
+    /* spawn raw numbers */
+    if (Math.random() < 0.55) spawn();
+    if (Math.random() < 0.3)  spawn();
+
+    ctx.clearRect(0, 0, w, h);
+    const gate = GATE();
+
+    /* faint grid */
+    ctx.strokeStyle = 'rgba(237,241,241,.04)'; ctx.lineWidth = 1;
+    for (let g = 1; g < 4; g++){ ctx.beginPath(); ctx.moveTo(0, h*g/4); ctx.lineTo(w, h*g/4); ctx.stroke(); }
+
+    /* ---- the model gate: pulsing vertical wire ---- */
+    const pulse = 0.5 + Math.sin(t * 3) * 0.25;
+    ctx.beginPath(); ctx.moveTo(gate, 4); ctx.lineTo(gate, h - 4);
+    ctx.strokeStyle = `rgba(47,230,160,${0.25 + pulse * 0.25})`;
+    ctx.lineWidth = 1.5;
+    ctx.shadowColor = WIRE; ctx.shadowBlur = 14 * pulse + 6;
+    ctx.stroke(); ctx.shadowBlur = 0;
+    ctx.font = '9px "IBM Plex Mono", monospace';
+    ctx.fillStyle = 'rgba(47,230,160,.7)';
+    ctx.fillText('MODEL', gate - 16, 12);
+
+    /* ---- raw number particles ---- */
+    ctx.textAlign = 'left';
+    for (let i = parts.length - 1; i >= 0; i--){
+      const p = parts[i];
+      p.wob += 0.1;
+
+      if (p.x < gate){
+        /* chaotic phase */
+        p.x += p.vx;
+        p.y += p.drift + Math.sin(p.wob) * 0.6;
+        if (p.y < 8) p.y = 8; if (p.y > h - 8) p.y = h - 8;
+        const prox = Math.max(0, 1 - (gate - p.x) / 90);   /* brighten near gate */
+        ctx.font = `${p.size}px "IBM Plex Mono", monospace`;
+        ctx.fillStyle = `rgba(139,152,169,${0.28 + prox * 0.5})`;
+        ctx.fillText(p.ch, p.x, p.y);
+      } else {
+        /* transformed phase: number dissolves into the curve */
+        if (!p.merged){ p.merged = true; p.mt = 0; }
+        p.mt += 0.05;
+        p.x += p.vx * 1.6;
+        const u = Math.min(1, (p.x - gate) / (w - gate));
+        const target = curveY(u, t);
+        p.y += (target - p.y) * Math.min(1, p.mt * 0.9);
+        const fade = Math.max(0, 1 - p.mt);
+        if (fade > 0.02){
+          ctx.font = `${p.size * fade}px "IBM Plex Mono", monospace`;
+          ctx.fillStyle = `rgba(47,230,160,${fade * 0.8})`;
+          ctx.fillText(p.ch, p.x, p.y);
+        } else {
+          /* becomes a spark riding the line */
+          ctx.beginPath(); ctx.arc(p.x, p.y, 1.4, 0, 7);
+          ctx.fillStyle = 'rgba(124,245,200,.8)';
+          ctx.fill();
+        }
+        if (p.x > w + 10) parts.splice(i, 1);
+      }
+    }
+
+    /* ---- the insight curve (right of gate) ---- */
+    const steps = 60;
+    ctx.beginPath();
+    for (let i = 0; i <= steps; i++){
+      const u = i / steps;
+      const x = gate + u * (w - gate);
+      const y = curveY(u, t);
+      i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+    }
+    const grad = ctx.createLinearGradient(gate, 0, w, 0);
+    grad.addColorStop(0, 'rgba(47,230,160,.15)');
+    grad.addColorStop(1, 'rgba(47,230,160,.95)');
+    ctx.strokeStyle = grad; ctx.lineWidth = 2;
+    ctx.shadowColor = WIRE; ctx.shadowBlur = 12;
+    ctx.stroke(); ctx.shadowBlur = 0;
+
+    /* glowing head of the curve */
+    const hy = curveY(1, t);
+    ctx.beginPath(); ctx.arc(w - 2, hy, 3, 0, 7);
+    ctx.fillStyle = '#7CF5C8';
+    ctx.shadowColor = WIRE; ctx.shadowBlur = 16;
+    ctx.fill(); ctx.shadowBlur = 0;
+
+    /* travelling pulse along the curve */
+    const pu = (t * 0.22) % 1;
+    ctx.beginPath();
+    ctx.arc(gate + pu * (w - gate), curveY(pu, t), 2.2, 0, 7);
+    ctx.fillStyle = 'rgba(124,245,200,.9)';
+    ctx.shadowColor = WIRE; ctx.shadowBlur = 12;
+    ctx.fill(); ctx.shadowBlur = 0;
+
+    /* ---- insight tags ---- */
+    if (t - lastTag > 2.6){ spawnTag(); lastTag = t; }
+    ctx.font = '10px "IBM Plex Mono", monospace';
+    for (let i = tags.length - 1; i >= 0; i--){
+      const g = tags[i]; g.life++;
+      const a = g.life < 20 ? g.life / 20 : Math.max(0, 1 - (g.life - 20) / (g.max - 20));
+      const x = gate + g.u * (w - gate);
+      const y = curveY(g.u, t) - 14 - (g.life * 0.06);
+      ctx.strokeStyle = `rgba(47,230,160,${a * .5})`;
+      ctx.beginPath(); ctx.moveTo(x, y + 4); ctx.lineTo(x, curveY(g.u, t) - 3); ctx.stroke();
+      ctx.fillStyle = `rgba(124,245,200,${a})`;
+      const tw = ctx.measureText(g.txt).width;
+      ctx.fillText(g.txt, Math.min(Math.max(x - tw/2, 2), w - tw - 2), y);
+      if (g.life >= g.max) tags.splice(i, 1);
+    }
+
+    /* readout */
+    if (vec && ((t * 60) | 0) % 10 === 0){
+      vec.textContent = `in ${dataIn.toLocaleString()} · out ${insightsOut}`;
+    }
+  }
+
+  if (REDUCED){
+    /* static frame: pre-run the simulation, then draw once */
+    for (let i = 0; i < 260; i++){
+      if (Math.random() < 0.7) spawn();
+      parts.forEach(p => { p.x += p.vx * 1.4; });
+      t += 0.016;
+    }
+    spawnTag(); tags[0].life = 30;
+    frame();
+  } else whenVisible(cv, frame);
+})();
+
+/* ---------- activity feed ---------- */
+(function(){
+  const feed = document.getElementById('feed');
+  const msgs = [
+    '<b>churn signal</b> flagged · cohort B-14 · 74d early',
+    '<b>segment drift</b> detected · high-LTV cluster expanding',
+    '<b>attribution</b> re-weighted · paid social ↑ incrementality',
+    '<b>anomaly cleared</b> · checkout funnel back to baseline',
+    '<b>win-back model</b> queued 312 dormant accounts',
+    '<b>competitor move</b> · pricing page change detected',
+  ];
+  feed.innerHTML = msgs.map((m,i) => `<span class="feed-line${i===0?' on':''}">${m}</span>`).join('');
+  if (REDUCED) return;
+  const lines = feed.querySelectorAll('.feed-line');
+  let i = 0;
+  setInterval(() => {
+    lines[i].classList.remove('on');
+    i = (i+1) % lines.length;
+    lines[i].classList.add('on');
+  }, 3400);
+})();
+
+/* ---------- STATEMENT + CTA: quiet pulse wires ---------- */
+function pulseWire(id, rows){
+  const cv = document.getElementById(id);
+  if (!cv) return;
+  let {ctx,w,h} = fitCanvas(cv);
+  addEventListener('resize', () => ({ctx,w,h} = fitCanvas(cv)));
+  let t = 0;
+  function frame(){
+    t += .01;
+    ctx.clearRect(0,0,w,h);
+    for (let r=0; r<rows; r++){
+      const yy = h*(r+1)/(rows+1);
+      ctx.beginPath();
+      for (let x=0; x<=w; x+=8){
+        const y = yy + Math.sin(x*.01 + t*(1+r*.4) + r*2)*8;
+        x ? ctx.lineTo(x,y) : ctx.moveTo(x,y);
+      }
+      ctx.strokeStyle = `rgba(47,230,160,${.10 - r*.02})`;
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+  }
+  if (REDUCED){ frame(); } else whenVisible(cv, frame);
+}
+pulseWire('stmtCanvas', 3);
+pulseWire('ctaCanvas', 4);
 </script>
 </body>
 </html>
