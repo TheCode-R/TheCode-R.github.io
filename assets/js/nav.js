@@ -6,18 +6,18 @@
 (function () {
   /* ---- Config ---- */
   const NAV_LINKS = [
-    { label: 'Solutions',     href: '/solutions/'         },
-    { label: 'Case Studies',  href: '/case-studies/'      },
-    { label: 'Insights',      href: '/insights/'          },
-    { label: 'About',         href: '/about.html'         },
+    { label: 'Services',      href: '/#services'          },
+    { label: 'How it works',  href: '/#how'               },
+    { label: 'Results',       href: '/#results'           },
+    { label: 'About',         href: '/#founder'           },
   ];
-  const CTA = { label: 'Book a Call', href: '/contact.html' };
-  const BRAND = { name: 'Fortify', tagline: 'Experience Certainty' };
+  const CTA = { label: 'Book a Free Teardown', href: '/contact.html' };
+  const BRAND = { name: 'Fortify', tagline: 'Active User Growth' };
 
   /* ---- Determine active link ---- */
   const path = window.location.pathname;
   function isActive(href) {
-    if (href === '/') return path === '/';
+    if (href === '/' || href.startsWith('/#')) return false;
     return path.startsWith(href.replace(/\/$/, ''));
   }
 

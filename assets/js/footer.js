@@ -6,28 +6,25 @@
 (function () {
   const FOOTER = {
     brand: 'Fortify',
-    tagline: 'Experience Certainty',
-    copy: '© 2025 Fortify Technologies. All rights reserved.',
-    aiNote: 'AI-Native organisation — built and operated with <span>AI</span>',
+    tagline: 'Active User Growth',
+    copy: '© 2026 Fortify Technologies. All rights reserved.',
+    aiNote: 'Retention · Reactivation · <span>MTU Growth</span>',
     cols: [
       {
-        title: 'Solutions',
+        title: 'Services',
         links: [
-          { label: 'Customer Profiling',       href: '/solutions/customer-profiling.html'      },
-          { label: 'Churn Analysis',            href: '/solutions/churn-analysis.html'          },
-          { label: 'Business Dashboards',       href: '/solutions/business-dashboards.html'     },
-          { label: 'MTU Growth',                href: '/solutions/mtu-growth.html'              },
-          { label: 'Campaign Optimisation',     href: '/solutions/campaign-optimisation.html'   },
-          { label: 'Competitor Analysis',       href: '/solutions/competitor-analysis.html'     },
+          { label: 'Retention',     href: '/#services' },
+          { label: 'Reactivation',  href: '/#services' },
+          { label: 'MTU Growth',    href: '/#services' },
         ]
       },
       {
         title: 'Company',
         links: [
-          { label: 'About',        href: '/about.html'        },
-          { label: 'Case Studies', href: '/case-studies/'     },
-          { label: 'Insights',     href: '/insights/'         },
-          { label: 'Contact',      href: '/contact.html'      },
+          { label: 'How it works',         href: '/#how'         },
+          { label: 'Results',              href: '/#results'     },
+          { label: 'About',                href: '/#founder'     },
+          { label: 'Book a Free Teardown', href: '/contact.html' },
         ]
       }
     ]
